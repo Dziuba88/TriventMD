@@ -217,6 +217,26 @@
     }
   }
 
+  &__title {
+    color: $white;
+    padding-top: 190px;
+    padding-bottom: 30px;
+
+    h1 {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 48px;
+      line-height: 1;
+      margin: 0 0 15px;
+    }
+    p {
+      opacity: 0.5;
+      margin: 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
   @include tabletScreenDown {
     &__action,
     &__top {
@@ -235,6 +255,17 @@
     }
     &__contacts {
       display: none;
+    }
+
+    &__title {
+      padding-top: 160px;
+      h1 {
+        font-size: 28px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 }

@@ -121,6 +121,11 @@
     .sm-last {
       order: 2;
     }
+
+    .fmenu__link,
+    .fmenu__text {
+      display: inline-flex;
+    }
   }
 
   @include smallScreenDown {

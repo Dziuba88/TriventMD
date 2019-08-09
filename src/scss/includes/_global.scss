@@ -193,3 +193,156 @@ body {
     }
   }
 }
+
+.breadcrumbs {
+  padding: 10px 0;
+
+  .vmenu {
+    display: block;
+    font-size: 0;
+    line-height: 20px;
+    border-bottom: 1px solid rgba($light, 0.5);
+    padding-bottom: 10px;
+
+    &__item {
+      font-size: 13px;
+      color: $light;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      user-select: none;
+      display: inline-block;
+      line-height: 1;
+      vertical-align: middle;
+      font-weight: 500;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+        width: 0.3em;
+        height: 0.3em;
+        border-top: 1px solid currentColor;
+        border-right: 1px solid currentColor;
+        transform: rotate(45deg);
+        margin: 0 0.5em;
+        margin-top: 2px;
+      }
+
+      a,
+      span {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+      }
+
+      .icon {
+        margin-right: 0.25em;
+        width: 1em;
+        height: 1em;
+      }
+
+      a {
+        color: $dark;
+        text-decoration: none;
+
+        &:hover {
+          color: $teal;
+        }
+      }
+
+      &.last:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.form {
+  &__input {
+    padding-bottom: 15px;
+
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 5px 10px;
+      border: 1px solid $light;
+      outline: 0;
+      resize: none;
+
+      transition: 0.15s linear;
+
+      &::-webkit-input-placeholder {
+        color: $light;
+      }
+      &::-moz-placeholder {
+        color: $light;
+      }
+      &:-ms-input-placeholder {
+        color: $light;
+      }
+      &:-moz-placeholder {
+        color: $light;
+      }
+    }
+
+    &.error {
+      input,
+      textarea {
+        border-color: $red;
+        color: $red;
+
+        &::-webkit-input-placeholder {
+          color: $red;
+        }
+        &::-moz-placeholder {
+          color: $red;
+        }
+        &:-ms-input-placeholder {
+          color: $red;
+        }
+        &:-moz-placeholder {
+          color: $red;
+        }
+      }
+    }
+    &.success {
+      input,
+      textarea {
+        border-color: $green;
+        color: $dark;
+      }
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: $dark;
+      &::-webkit-input-placeholder {
+        color: $white;
+      }
+      &::-moz-placeholder {
+        color: $white;
+      }
+      &:-ms-input-placeholder {
+        color: $white;
+      }
+      &:-moz-placeholder {
+        color: $white;
+      }
+    }
+
+    input {
+      height: 34px;
+    }
+
+    textarea {
+      height: 160px;
+    }
+  }
+}

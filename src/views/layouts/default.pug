@@ -188,7 +188,13 @@ html(lang="en")
             .welcome-next: svg.icon: use(xlink:href="#next")
             .welcome-prev: svg.icon: use(xlink:href="#prev")
       else
-        h1 #{title}
+        if title
+          .trv-header__title
+            .container
+              if title
+                h1=title
+              if description
+                p!=description
     // PAGE CONTENT
     main.trv-content: block CONTENT
     // Global FOOTER
@@ -205,7 +211,7 @@ html(lang="en")
     footer.trv-footer
       .trv-footer__wraper
         .container: .row
-          .col.md-2.sm-4.xs-6
+          .col.md-2.sm-4
             .trv-footer__nav
               ul.fmenu
                 li.fmenu__item: a.fmenu__link(href="#") О нас
@@ -215,7 +221,7 @@ html(lang="en")
                 li.fmenu__item: a.fmenu__link(href="#") Услуги
                 li.fmenu__item: a.fmenu__link(href="#") Блог
                 li.fmenu__item: a.fmenu__link(href="#") Контакты
-          .col.md-3.sm-4.xs-6
+          .col.md-3.sm-4
             .trv-footer__nav
               ul.fmenu
                 li.fmenu__item: a.fmenu__link(href="#") Вентиляция
