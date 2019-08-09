@@ -1,0 +1,38 @@
+.dropdown {
+  position: relative;
+  user-select: none;
+  font-size: inherit;
+  display: inline-block;
+
+  &__toggle {
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__caret {
+    display: inline-block;
+    width: 0.75em;
+    height: 0.75em;
+    line-height: 1;
+    vertical-align: middle;
+    transition: 0.25s linear;
+  }
+
+  &__menu {
+    display: none;
+    position: absolute;
+    min-width: 100%;
+    margin-top: 2px;
+    top: 100%;
+    box-shadow: 0 1px 3px rgba($dark, 0.25);
+    z-index: 999;
+  }
+  &.open &__menu {
+    display: block;
+  }
+
+  &.open &__caret {
+    transform: rotate(180deg);
+  }
+}

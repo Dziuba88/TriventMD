@@ -1,0 +1,146 @@
+.trv-footer {
+  background: url(../img/footer_bg.png) center center;
+  background-size: cover;
+  color: $white;
+  font-size: 12px;
+  line-height: 15px;
+
+  &__wraper {
+    padding-top: 48px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba($white, 0.2);
+  }
+
+  &__copyright {
+    text-align: center;
+    padding: 15px 0;
+
+    a {
+      color: currentColor;
+      text-decoration: none;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__about {
+    margin-bottom: 15px;
+    h4 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      font-weight: 300;
+      line-height: 24px;
+    }
+
+    p {
+      line-height: 1.67;
+      margin: 0 0 10px;
+    }
+    .readmore {
+      color: $white;
+      text-decoration: none;
+
+      span {
+        display: inline-block;
+        line-height: 1.25;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+
+  .fmenu,
+  .smenu {
+    margin: 0 0 15px;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+      display: block;
+      list-style: none;
+    }
+
+    &__link {
+      color: currentColor;
+      text-decoration: none;
+      transition: 0.15s linear;
+      font-weight: 500;
+
+      &:hover {
+        color: $light;
+      }
+    }
+  }
+
+  .fmenu__item {
+    padding: 5px 0;
+  }
+
+  .fmenu__link,
+  .fmenu__text {
+    display: flex;
+    .icon {
+      display: block;
+      flex: none;
+      margin-right: 0.5em;
+    }
+  }
+
+  .smenu {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      padding-right: 10px;
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      opacity: 0.5;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid currentColor;
+
+      &:hover {
+        color: $white;
+        opacity: 1;
+      }
+    }
+  }
+
+  @include tabletScreenDown {
+    .sm-last {
+      order: 2;
+    }
+  }
+
+  @include smallScreenDown {
+    br {
+      display: none;
+    }
+    &__wraper {
+      padding: 30px 0;
+    }
+    .sm-last {
+      display: none;
+    }
+
+    .xs-6 {
+      border-bottom: 1px solid rgba($white, 0.2);
+      margin-bottom: 15px;
+    }
+
+    &__copyright {
+      font-size: 10px;
+    }
+  }
+}

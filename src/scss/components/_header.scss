@@ -1,0 +1,632 @@
+.trv-header {
+  position: relative;
+  @include gradient(45deg, $teal 5%, $green 95%);
+
+  &__wraper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
+
+  &__top {
+    border-bottom: 1px solid rgba($white, 0.2);
+    padding: 10px 0;
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    &__nav {
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      flex: 1;
+
+      .vmenu__item {
+        padding-right: 1em;
+      }
+
+      .vmenu__link {
+        color: $white;
+        text-decoration: none;
+        transition: 0.25s linear;
+        white-space: nowrap;
+
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+
+    &__lang {
+      flex: none;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 14px;
+
+      .dropdown {
+        &__toggle {
+          padding: 4px 10px;
+          border-radius: 14px;
+          border: 1px solid currentColor;
+          color: $white;
+        }
+
+        &__caret {
+          width: 1em;
+          height: 1em;
+          margin: 0;
+          margin-right: -0.5em;
+        }
+
+        &__menu {
+          background-color: $white;
+          right: 0;
+          margin-top: 3px;
+          line-height: 20px;
+          transition: 0.25s ease-in-out;
+          display: block;
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: $dark;
+            transition: 0.15s;
+            font-weight: 400;
+
+            &:hover {
+              background-color: rgba($light, 0.2);
+            }
+          }
+
+          .current a {
+            background-color: rgba($teal, 0.75);
+            color: $white;
+          }
+        }
+
+        &.open .dropdown__menu {
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    &__wraper {
+      background-color: rgba($white, 0.3);
+      border-bottom: 1px solid rgba($white, 0.2);
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__separator {
+    flex: 1;
+    min-width: 15px;
+  }
+
+  &__brand {
+    a {
+      display: block;
+      transition: 0.15s ease-in-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .logo {
+      display: block;
+      width: 230px;
+      height: 48px;
+    }
+  }
+
+  &__contacts {
+    flex: none;
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 15px;
+
+    a {
+      white-space: nowrap;
+      display: block;
+      text-align: right;
+      color: $white;
+      text-decoration: none;
+      transition: 0.25s ease-in-out;
+      margin-bottom: 3px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        opacity: 0.75;
+      }
+
+      .icon {
+        margin-right: 0.25em;
+      }
+
+      span {
+        vertical-align: middle;
+        line-height: 1;
+      }
+
+      &.big-phone {
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &__action {
+    padding: 0 15px;
+
+    .btn {
+      display: block;
+    }
+  }
+
+  &__cart {
+    border-left: 1px solid rgba($white, 0.2);
+
+    .cart-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      color: $white;
+      font-size: 32px;
+      line-height: 1;
+      padding: 15px 25px;
+
+      .counter {
+        @include gradient(45deg, $teal 5%, $green 95%);
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        font-size: 8px;
+        line-height: 10px;
+        font-weight: 500;
+        width: 20px;
+        height: 20px;
+        color: $white;
+        border-radius: 10px;
+        padding: 5px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        box-sizing: border-box;
+      }
+
+      &:hover .icon {
+        animation: energy 0.5s 2 ease-in-out;
+      }
+    }
+  }
+
+  @include tabletScreenDown {
+    &__action,
+    &__top {
+      display: none;
+    }
+    &__contacts {
+      padding-left: 0;
+      padding-right: 15px;
+    }
+  }
+
+  @include smallScreenDown {
+    &__brand .logo {
+      width: 180px;
+      height: 36px;
+    }
+    &__contacts {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  &__wraper {
+    background-color: rgba($white, 0.3);
+    display: flex;
+    align-items: stretch;
+  }
+  &__left {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+
+    .product__search {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      background-color: lighten($green, 35%);
+      display: flex;
+      align-items: center;
+      left: 100%;
+      opacity: 0;
+      transition: 0.5s linear;
+
+      &.show {
+        opacity: 1;
+        left: 0;
+      }
+
+      label {
+        position: relative;
+        z-index: 1;
+        display: block;
+        flex: 1;
+        text-align: left;
+        padding-left: 10px;
+        color: $teal;
+      }
+
+      input {
+        display: block;
+        position: absolute;
+        z-index: 2;
+        padding-left: 40px;
+        padding-right: 100px;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        background-color: transparent;
+        font-size: 16px;
+        border: 0;
+        outline: none;
+        -webkit-appearance: none;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: $gray;
+      }
+
+      .btn {
+        display: block;
+        position: relative;
+        z-index: 3;
+        margin-right: 15px;
+      }
+    }
+  }
+  &__right {
+    flex: none;
+  }
+
+  &__search-toogle {
+    width: 90px;
+    height: 50px;
+    border: 0;
+    background-color: transparent;
+    color: $white;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    display: block;
+    padding: 10px;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
+    &:active {
+      opacity: 1;
+      background-color: rgba($dark, 0.15);
+    }
+    &.active {
+      font-size: 14px;
+    }
+  }
+
+  &__nav {
+    height: 50px;
+
+    .vmenu {
+      &__item {
+        flex: 1;
+        border-right: 1px solid rgba($white, 0.2);
+      }
+      &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        color: $white;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 10px;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+          margin-right: 0.5em;
+        }
+
+        span {
+          display: block;
+          line-height: 1;
+        }
+      }
+    }
+  }
+
+  &__mobile {
+    display: none;
+    @include gradient(45deg, $teal 5%, $green 95%);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    transition: 0.5s linear;
+
+    .close__navbar {
+      background-color: transparent;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      color: $white;
+      font-size: 18px;
+    }
+
+    &__header {
+      border-bottom: 1px solid rgba($white, 0.2);
+      padding: 10px 0;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .header-left {
+        flex: 1;
+      }
+    }
+
+    &__lang {
+      font-size: 12px;
+      line-height: 14px;
+
+      .dropdown {
+        &__toggle {
+          padding: 4px 10px;
+          border-radius: 14px;
+          border: 1px solid currentColor;
+          color: $white;
+        }
+
+        &__caret {
+          width: 1em;
+          height: 1em;
+          margin: 0;
+          margin-right: -0.5em;
+        }
+
+        &__menu {
+          background-color: $white;
+          right: 0;
+          margin-top: 3px;
+          line-height: 20px;
+          transition: 0.25s ease-in-out;
+          display: block;
+          transform-origin: top;
+          transform: scaleY(0);
+          opacity: 0;
+          text-align: center;
+
+          a {
+            text-decoration: none;
+            color: $dark;
+            transition: 0.15s;
+            font-weight: 400;
+
+            &:hover {
+              background-color: rgba($light, 0.2);
+            }
+          }
+
+          .current a {
+            background-color: rgba($teal, 0.75);
+            color: $white;
+          }
+        }
+
+        &.open .dropdown__menu {
+          opacity: 1;
+          transform: scaleY(1);
+        }
+      }
+    }
+
+    &__nav {
+      text-align: center;
+
+      .cat-nav {
+        margin: 0 0 15px;
+        padding: 0;
+        list-style: none;
+
+        &__item {
+          border-bottom: 1px solid rgba($white, 0.2);
+          display: block;
+          box-sizing: border-box;
+        }
+
+        &__link {
+          padding: 10px 0;
+          display: block;
+          font-size: 14px;
+          line-height: 20px;
+          text-transform: uppercase;
+          font-weight: 500;
+          color: $white;
+          text-decoration: none;
+
+          .icon {
+            display: block;
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+          }
+
+          &:hover,
+          &.active {
+            background-color: rgba($white, 0.2);
+          }
+        }
+      }
+
+      .hmenu {
+        margin-bottom: 15px;
+        &__item {
+          border-bottom: 1px solid rgba($white, 0.2) !important;
+        }
+
+        &__link {
+          color: $white;
+          font-size: 18px;
+          line-height: 20px;
+          padding: 10px 0;
+          display: block;
+          text-decoration: none;
+
+          &:hover,
+          &.active {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+
+    &__action {
+      text-align: center;
+      padding: 0 0 30px;
+    }
+
+    &__contacts {
+      columns: 2;
+      column-gap: 15px;
+      width: 100%;
+      padding-bottom: 30px;
+
+      a {
+        display: inline-block;
+        width: 100%;
+        font-size: 12px;
+        text-decoration: none;
+        color: $white;
+        margin-bottom: 10px;
+
+        .icon {
+          margin-right: 0.5em;
+        }
+
+        .icon,
+        span {
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .show__navbar {
+    display: none;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 0;
+    border-right: 1px solid rgba($white, 0.2);
+    background-color: transparent;
+    color: $white;
+    font-size: 20px;
+  }
+
+  @include tabletScreenDown {
+    .show__navbar {
+      display: block;
+    }
+    &__nav {
+      display: none;
+    }
+    &__search-toogle {
+      border-left: 1px solid rgba($white, 0.2);
+      width: 91px;
+    }
+    &__mobile {
+      display: block;
+      transform: scale(0);
+      opacity: 0;
+      visibility: hidden;
+
+      &.show {
+        transform: scale(1);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      &__contacts {
+        display: none;
+      }
+    }
+    &__nav {
+      .vmenu {
+        display: none;
+      }
+    }
+  }
+
+  @include smallScreenDown {
+    &__left {
+      .product__search {
+        label {
+          font-size: 12px;
+        }
+        input {
+          padding-left: 30px;
+          font-size: 12px;
+          padding-right: 65px;
+        }
+
+        .btn.xs {
+          font-size: 10px;
+          padding: 5px 10px;
+          margin-right: 5px;
+        }
+      }
+    }
+    &__search-toogle {
+      width: 50px;
+    }
+    &__mobile {
+      &__contacts {
+        display: block;
+      }
+    }
+  }
+}

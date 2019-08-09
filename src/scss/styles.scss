@@ -1,0 +1,16 @@
+@import './includes/variables';
+@import './includes/mixins';
+@import './includes/grid';
+@import './includes/global';
+@import './includes/buttons';
+
+// Plugins Styles
+@import './plugins/swiper';
+@import './plugins/dropdown';
+@import './plugins/tabs';
+
+// COMPONENTS
+@import './components/header';
+@import './components/footer';
+@import './components/homepage';
+@import './components/catalog';

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+block VARIABLES
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title TRIVENT :: #{title}
+    // Project Styles
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap&subset=cyrillic")
+    link(rel="stylesheet", href="css/styles.min.css")
+  body.trv(class=page)
+    // Global HEADER
+    header.trv-header
+      .trv-header__wraper
+        .trv-header__top
+          .container
+            .trv-header__top__nav
+              ul.vmenu
+                li.vmenu__item: a.vmenu__link(href="#") О нас
+                li.vmenu__item: a.vmenu__link(href="#") Наши объекты
+                li.vmenu__item: a.vmenu__link(href="#") Сотрудничество
+                li.vmenu__item: a.vmenu__link(href="#") Акции
+                li.vmenu__item: a.vmenu__link(href="#") Услуги
+                li.vmenu__item: a.vmenu__link(href="#") Вакансии
+                li.vmenu__item: a.vmenu__link(href="#") Контакты
+            .trv-header__separator
+            .trv-header__top__lang
+              .dropdown
+                span.dropdown__toggle(data-toggle="dropdown") 
+                  span Ru
+                  svg.dropdown__caret: use(xlink:href="#caret")
+                .dropdown__menu
+                  ul.hmenu
+                    li.hmenu__item.current: a.hmenu__link(href="#") Ru
+                    li.hmenu__item: a.hmenu__link(href="#") Md
+                    li.hmenu__item: a.hmenu__link(href="#") En
+        .trv-header__bottom
+            .container
+              .trv-header__bottom__wraper
+                .trv-header__brand
+                  a(href=""): svg.logo: use(xlink:href="#TriventLogoWhite")
+                .trv-header__separator
+                .trv-header__contacts
+                  a.big-phone(href="tel:+373 69 777 383")
+                    svg.icon: use(xlink:href="#icon-phone")
+                    span +373 69 777 383
+                  a(href="mailto:info@trivent.md")
+                    svg.icon: use(xlink:href="#icon-envelope")
+                    span info@trivent.md
+                .trv-header__contacts
+                  a(href="tel:+373 22 854 006")
+                    svg.icon: use(xlink:href="#icon-telephone")
+                    span +373 22 854 006
+                  a(href="tel:+373 22 854 925")
+                    svg.icon: use(xlink:href="#icon-fax")
+                    span +373 22 854 925
+                .trv-header__action
+                  button.btn.btn-accent
+                    svg.icon: use(xlink:href="#icon-calculator")
+                    span Расчет стоимости
+                .trv-header__cart
+                  a.cart-button(href="")
+                    svg.icon: use(xlink:href="#icon-cart")
+                    span.counter 25
+        .navbar
+          .container
+            .navbar__wraper
+              .navbar__left
+                button.show__navbar: svg.icon: use(xlink:href="#icon-bars")
+                .navbar__nav
+                  ul.vmenu
+                    li.vmenu__item: a.vmenu__link(href="")
+                      svg.icon: use(xlink:href="#icon-fan")
+                      span Вентиляция
+                    li.vmenu__item: a.vmenu__link(href="")
+                      svg.icon: use(xlink:href="#icon-cold")
+                      span Кондиционеры
+                    li.vmenu__item: a.vmenu__link(href="")
+                      svg.icon: use(xlink:href="#icon-warm")
+                      span Отопление
+                    li.vmenu__item: a.vmenu__link(href="")
+                      svg.icon: use(xlink:href="#icon-sett")
+                      span Монтажные элементы
+                form.product__search(method='get' action='')
+                  label.icon(for='header-search'): svg.icon: use(xlink:href="#icon-search")
+                  input#header-search(autocomplete='off' type='search' name='query' placeholder='Поиск по каталогу')
+                  button.btn.xs.btn-teal(type='submit') Найти
+              .navbar__right
+                button.navbar__search-toogle: svg.icon: use(xlink:href="#icon-search")
+        .navbar__mobile
+          .container
+            .navbar__mobile__header
+              .header-left
+                .navbar__mobile__lang
+                  .dropdown
+                    span.dropdown__toggle(data-toggle="dropdown") 
+                      span Ru
+                      svg.dropdown__caret: use(xlink:href="#caret")
+                    .dropdown__menu
+                      ul.hmenu
+                        li.hmenu__item.current: a.hmenu__link(href="#") Ru
+                        li.hmenu__item: a.hmenu__link(href="#") Md
+                        li.hmenu__item: a.hmenu__link(href="#") En
+              .header-right
+                button.close__navbar: svg.icon: use(xlink:href="#icon-cancel")
+            .navbar__mobile__nav
+              ul.cat-nav
+                li.cat-nav__item: a.cat-nav__link.active(href="")
+                  svg.icon: use(xlink:href="#icon-fan")
+                  span Вентиляция
+                li.cat-nav__item: a.cat-nav__link(href="")
+                  svg.icon: use(xlink:href="#icon-cold")
+                  span Кондиционеры
+                li.cat-nav__item: a.cat-nav__link(href="")
+                  svg.icon: use(xlink:href="#icon-warm")
+                  span Отопление
+                li.cat-nav__item: a.cat-nav__link(href="")
+                  svg.icon: use(xlink:href="#icon-sett")
+                  span Монтажные элементы
+              ul.hmenu
+                li.hmenu__item: a.hmenu__link.active(href="#") О нас
+                li.hmenu__item: a.hmenu__link(href="#") Наши объекты
+                li.hmenu__item: a.hmenu__link(href="#") Сотрудничество
+                li.hmenu__item: a.hmenu__link(href="#") Акции
+                li.hmenu__item: a.hmenu__link(href="#") Услуги
+                li.hmenu__item: a.hmenu__link(href="#") Вакансии
+                li.hmenu__item: a.hmenu__link(href="#") Контакты
+            .navbar__mobile__action
+              button.btn.btn-accent.lg
+                svg.icon: use(xlink:href="#icon-calculator")
+                span Расчет стоимости
+            .navbar__mobile__contacts
+              a(href="tel:+373 69 777 383")
+                svg.icon: use(xlink:href="#icon-phone")
+                span +373 69 777 383
+              a(href="tel:+373 22 854 006")
+                svg.icon: use(xlink:href="#icon-telephone")
+                span +373 22 854 006
+              a(href="tel:+373 22 854 925")
+                svg.icon: use(xlink:href="#icon-fax")
+                span +373 22 854 925
+              a(href="mailto:info@trivent.md")
+                svg.icon: use(xlink:href="#icon-envelope")
+                span info@trivent.md
+
+      if headerSlider
+        // ONLY FrontPage SLIDER
+        .home__welcome
+          .home__welcome-swiper.swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                img.swiper-slide__image(src="tmp/slide_img_1.png", alt="" data-swiper-parallax="-100%" data-swiper-parallax-y="-1000" data-swiper-parallax-opacity="0")
+                .container( data-swiper-parallax="-1000" data-swiper-parallax-opacity="0"): .row
+                  .col.lg-7.md-8.sm-10
+                    .swiper-slide__title Кондиционер <strong>Ballu</strong>
+                    .swiper-slide__subtitle серия I Green PRO
+                    .swiper-slide__text: p Стильная надёжная и энергоэффективная сплит-система I Green PRO, позволяет управлять потоками воздуха прямо с пульта, регулируя его в четырех направлениях. Одновременно благодаря генератору Cold Plasma, прибор эффективно очищает и ионизирует воздух, делая его чище и полезнее.
+                    .swiper-slide__link: a.btn.lg.btn-white-o(href="#") Купить сейчас
+              .swiper-slide
+                img.swiper-slide__image(src="tmp/slide_img_2.webp", alt="" data-swiper-parallax="-100%" data-swiper-parallax-y="1000" data-swiper-parallax-opacity="0")
+                .container( data-swiper-parallax="-1000" data-swiper-parallax-opacity="0"): .row
+                  .col.lg-7.md-8.sm-10
+                    .swiper-slide__title Вентилятор <strong>AUX</strong>
+                    .swiper-slide__subtitle серия I Green PRO
+                    .swiper-slide__text: p Стильная надёжная и энергоэффективная сплит-система I Green PRO, позволяет управлять потоками воздуха прямо с пульта, регулируя его в четырех направлениях. Одновременно благодаря генератору Cold Plasma, прибор эффективно очищает и ионизирует воздух, делая его чище и полезнее.
+                    .swiper-slide__link: a.btn.lg.btn-white-o(href="#") Купить сейчас
+              .swiper-slide
+                img.swiper-slide__image(src="tmp/slide_img_3.png", alt="" data-swiper-parallax="-100%" data-swiper-parallax-x="1000" data-swiper-parallax-opacity="0")
+                .container( data-swiper-parallax="-1000" data-swiper-parallax-opacity="0"): .row
+                  .col.lg-7.md-8.sm-10
+                    .swiper-slide__title Кондиционер <strong>Ballu</strong>
+                    .swiper-slide__subtitle серия I Green PRO
+                    .swiper-slide__text: p Стильная надёжная и энергоэффективная сплит-система I Green PRO, позволяет управлять потоками воздуха прямо с пульта, регулируя его в четырех направлениях. Одновременно благодаря генератору Cold Plasma, прибор эффективно очищает и ионизирует воздух, делая его чище и полезнее.
+                    .swiper-slide__link: a.btn.lg.btn-white-o(href="#") Купить сейчас
+            // Add Arrows
+            .welcome-next: svg.icon: use(xlink:href="#next")
+            .welcome-prev: svg.icon: use(xlink:href="#prev")
+      else
+        h1 #{title}
+    // PAGE CONTENT
+    main.trv-content: block CONTENT
+    // Global FOOTER
+    .section.clients
+      .container
+        h2.clients__header: span Наши клиенты
+        .clients-slider.swiper-container
+          .swiper-wrapper
+            .swiper-slide: img(src="tmp/logo_brand1-200x95.png", alt="")
+            .swiper-slide: img(src="tmp/logo_brand2-200x95.png", alt="")
+            .swiper-slide: img(src="tmp/logo_brand3-200x95.png", alt="")
+            .swiper-slide: img(src="tmp/logo_brand4-200x95.png", alt="")
+            .swiper-slide: img(src="tmp/logo_brand5-200x95.png", alt="")
+    footer.trv-footer
+      .trv-footer__wraper
+        .container: .row
+          .col.md-2.sm-4.xs-6
+            .trv-footer__nav
+              ul.fmenu
+                li.fmenu__item: a.fmenu__link(href="#") О нас
+                li.fmenu__item: a.fmenu__link(href="#") Наши объекты
+                li.fmenu__item: a.fmenu__link(href="#") Сотрудничество
+                li.fmenu__item: a.fmenu__link(href="#") Акции
+                li.fmenu__item: a.fmenu__link(href="#") Услуги
+                li.fmenu__item: a.fmenu__link(href="#") Блог
+                li.fmenu__item: a.fmenu__link(href="#") Контакты
+          .col.md-3.sm-4.xs-6
+            .trv-footer__nav
+              ul.fmenu
+                li.fmenu__item: a.fmenu__link(href="#") Вентиляция
+                li.fmenu__item: a.fmenu__link(href="#") Кондиционирование
+                li.fmenu__item: a.fmenu__link(href="#") Отопление
+                li.fmenu__item: a.fmenu__link(href="#") Монтажные элементы
+
+              ul.fmenu
+                li.fmenu__item: a.fmenu__link(href="#") Ваша Корзина
+                li.fmenu__item: a.fmenu__link(href="#") Ответы на вопросы
+          .col.md-4.sm-last
+            .trv-footer__about
+              h4 О Компании
+              p «Trivent Com» SRL была основана 29.08.2009 и работает на рынке Республики Молдова в области проектирования, поставки, монтажа и технического обслуживания систем отопления, вентиляции, кондиционирования, отопления и охлаждения.
+              a.readmore(href="")
+                svg.icon: use(xlink:href="#next")
+                span Подробнее
+          .col.md-3.sm-4
+            .trv-footer__contacts
+              ul.fmenu
+                li.fmenu__item: span.fmenu__text
+                  svg.icon: use(xlink:href="#icon-address")
+                  span 2071, РМ Кишинев<br>ул. Alba Iulia 75
+                li.fmenu__item: a.fmenu__link(href="tel:+373 69 777 383")
+                    svg.icon: use(xlink:href="#icon-phone")
+                    span +373 69 777 383
+                li.fmenu__item: a.fmenu__link(href="tel:+373 22 854 006")
+                    svg.icon: use(xlink:href="#icon-telephone")
+                    span +373 22 854 006
+                li.fmenu__item: a.fmenu__link(href="tel:+373 22 854 925")
+                    svg.icon: use(xlink:href="#icon-fax")
+                    span +373 22 854 925
+                li.fmenu__item: a.fmenu__link(href="mailto:info@trivent.md")
+                    svg.icon: use(xlink:href="#icon-envelope")
+                    span info@trivent.md
+            .trv-footer__social
+              ul.smenu
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-facebook")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-twitter")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-linkedin")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-vk")
+      .trv-footer__copyright Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены
+    // Global SCRIPS
+    script(src="js/jquery-3.4.1.min.js")
+    script(src="js/main.min.js")
+    script(src="js/app.min.js")

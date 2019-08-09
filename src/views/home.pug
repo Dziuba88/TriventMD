@@ -1,0 +1,180 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Главная'
+  - var page = 'home'
+  - var headerSlider = true
+block CONTENT
+  // HOME SCOPES
+  .section.home__scopes
+    .container
+      ul.scopes__list
+        li.scopes__list__item: a.scopes__list__link(href="")
+          span.icon: svg: use(xlink:href="#scope-1")
+          span.text Широкий ассортимент товара
+        li.scopes__list__item: a.scopes__list__link(href="")
+          span.icon: svg: use(xlink:href="#scope-2")
+          span.text Мобильные бригады сервисного обслуживания
+        li.scopes__list__item: a.scopes__list__link(href="")
+          span.icon: svg: use(xlink:href="#scope-3")
+          span.text Штатные монтажные бригады
+        li.scopes__list__item: a.scopes__list__link(href="")
+          span.icon: svg: use(xlink:href="#scope-4")
+          span.text Собственный технический отдел
+        li.scopes__list__item: a.scopes__list__link(href="")
+          span.icon: svg: use(xlink:href="#scope-5")
+          span.text качественно, удобно, выгодно и быстро
+  // HOME FEAUTERED ITEMS
+  .section.home__arrivals
+    .container
+      ul.tab-list(role='tablist')
+        li.tab-list__item.active(role='presentation')
+          a.tab-list__link(href='#newlest' aria-controls='newlest' role='tab' data-toggle='tab') новинки
+        li.tab-list__item(role='presentation')
+          a.tab-list__link(href='#hotest' aria-controls='hotest' role='tab' data-toggle='tab') хиты продаж
+        li.tab-list__item(role='presentation')
+          a.tab-list__link(href='#recommended' aria-controls='recommended' role='tab' data-toggle='tab') рекомендуем
+      // Tab panes
+      .tab-content
+        #newlest.tab-pane.fade.active.in(role='tabpanel')
+          .newlest.swiper-container
+            include components/featured-slider
+            .newlest-next: svg.icon: use(xlink:href="#next")
+            .newlest-prev: svg.icon: use(xlink:href="#prev")
+        #hotest.tab-pane.fade(role='tabpanel')
+          .hotest.swiper-container
+            include components/featured-slider
+            .hotest-next: svg.icon: use(xlink:href="#next")
+            .hotest-prev: svg.icon: use(xlink:href="#prev")
+        #recommended.tab-pane.fade(role='tabpanel')
+          .recommended.swiper-container
+            include components/featured-slider
+            .recommended-next: svg.icon: use(xlink:href="#next")
+            .recommended-prev: svg.icon: use(xlink:href="#prev")
+  .section.services
+    .container
+      .row
+        .col.sm-6: a.services__item(href="")
+          img(src="tmp/service_ballu_ru.png", alt="")
+          span подробнее
+        .col.sm-6: a.services__item(href="")
+          img(src="tmp/service_montage_ru.png", alt="")
+          span подробнее
+  .section.home__sales
+    .container
+      h2.home__sales__header: span Акции
+      .sale__item
+        .sale__item__info
+          .row
+            .col.md-7.lg-6
+              h2.item__title: a(href="") Ther products name demo
+              p.item__description Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+              .item__price
+                span.current 8450 mdl
+                span.old 12758 mdl
+              .item__action: button.btn.add-to-basket в корзину
+            .col.md-4.omd-1.lg-4.olg-2: a.item__image(href=""): img(src="tmp/shop_item_thumb_1.png", alt="")
+        .sale__item__countdown#countdown
+          .days
+            strong
+            span дней
+          .hours
+            strong
+            span часов
+          .minutes
+            strong
+            span минут
+          .secconds
+            strong
+            span секунд
+  .section.home__portfolio
+    .container
+      h2.home__portfolio__header: span Наши проекты
+      .row
+        .col.sm-4
+          a.home__portfolio__item(href="")
+            span.item__image: img(src="http://placeimg.com/640/360/any/1", alt="")
+            span Название проекта или краткое описание
+        .col.sm-4
+          a.home__portfolio__item(href="")
+            span.item__image: img(src="http://placeimg.com/640/360/any/2", alt="")
+            span Название проекта или краткое описание
+        .col.sm-4
+          a.home__portfolio__item(href="")
+            span.item__image: img(src="http://placeimg.com/640/360/any/3", alt="")
+            span Название проекта или краткое описание
+
+      a.btn.btn-white-o(href="#") смотреть еще
+  .section.home__popular
+    .container
+      h2.home__popular__header: span популярное
+      .popular.swiper-container
+        .swiper-wrapper
+            .swiper-slide
+              .grid-list__item
+                a(href="").item__image
+                  img(src="tmp/shop_item_thumb_1.png", alt="")
+                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                .item__price
+                  .value 1250.00
+                  .currency mdl
+                .item__text
+                  .item__title: a(href="") Ther products name demo
+                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .item__action: button.btn.add-to-basket в корзину
+            .swiper-slide
+              .grid-list__item
+                a(href="").item__image
+                  img(src="tmp/shop_item_thumb_1.png", alt="")
+                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                .item__price.action
+                  .value 1250.00
+                  .value__old 1250.00
+                  .currency mdl
+                .item__text
+                  .item__title: a(href="") Ther products name demo
+                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .item__action: button.btn.add-to-basket в корзину
+            .swiper-slide
+              .grid-list__item.out-of-stock
+                a(href="").item__image
+                  img(src="tmp/shop_item_thumb_1.png", alt="")
+                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                .item__price
+                  .value 125000.00
+                  .currency mdl
+                .item__text
+                  .item__title: a(href="") Ther products name demo
+                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .item__action: button.btn.add-to-basket(disabled) нет в наличии
+            .swiper-slide
+              .grid-list__item
+                a(href="").item__image
+                  img(src="tmp/shop_item_thumb_1.png", alt="")
+                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                .item__price
+                  .value 1250.00
+                  .currency mdl
+                .item__text
+                  .item__title: a(href="") Ther products name demo
+                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                .item__action: button.btn.add-to-basket в корзину
+  .section.home__reviews
+    .container
+      h2.home__reviews__header: span Отзывы клиентов
+      .row
+        .col.md-10.lg-10.omd-1.olg-1
+          .reviews.swiper-container
+            .swiper-wrapper
+              .swiper-slide
+                .reviews__item
+                  svg.icon: use(xlink:href="#icon-review")
+                  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...
+              .swiper-slide
+                .reviews__item
+                  svg.icon: use(xlink:href="#icon-review")
+                  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...
+              .swiper-slide
+                .reviews__item
+                  svg.icon: use(xlink:href="#icon-review")
+                  p Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat...
+            .reviews__dots

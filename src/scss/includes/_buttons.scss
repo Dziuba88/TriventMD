@@ -1,0 +1,150 @@
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+
+  outline: 0;
+  overflow: hidden;
+  border: 1px solid $gray;
+  border-radius: 17px;
+  padding: 7px 14px;
+  background-color: $white;
+
+  color: $dark;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
+
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    background-color: $teal;
+    border-color: $teal;
+    color: $white;
+    box-shadow: 0 1px 3px rgba($dark, 0.15);
+  }
+  &:active {
+    background-color: darken($teal, 10%);
+    border-color: darken($teal, 10%);
+    color: $white;
+    box-shadow: inset 0 1px 3px rgba($dark, 0.15);
+  }
+
+  &:disabled,
+  &.disabled {
+    background-color: $white;
+    border-color: $light;
+    color: $light;
+    box-shadow: none;
+    cursor: default;
+  }
+
+  &.lg {
+    padding: 14px 29px;
+    border-radius: 24px;
+  }
+
+  span {
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  .icon {
+    margin: 0 0.5em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &-primary {
+    @include gradient(45deg, $teal 0%, $green 100%);
+    color: $white;
+    padding: 8px 15px;
+    border: 0;
+
+    &:hover {
+      color: $white;
+      background-size: 200%;
+      background-position-x: right;
+    }
+
+    &:active {
+      color: $white;
+      background-size: 200%;
+      background-position-x: left;
+    }
+
+    &.lg {
+      padding: 15px 30px;
+    }
+  }
+  &-accent {
+    @include gradient(45deg, $pink 0%, $red 100%);
+    color: $white;
+    padding: 8px 15px;
+    border: 0;
+
+    &:hover {
+      color: $white;
+      background-size: 200%;
+      background-position-x: right;
+    }
+
+    &:active {
+      color: $white;
+      background-size: 200%;
+      background-position-x: left;
+    }
+
+    &.lg {
+      padding: 15px 30px;
+    }
+  }
+  &-white-o {
+    background-color: rgba($white, 0);
+    border-color: $white;
+    color: $white;
+
+    &:hover {
+      box-shadow: none;
+      background-color: rgba($white, 0.15);
+      color: $white;
+      border-color: $white;
+    }
+    &:active {
+      box-shadow: none;
+      background-color: rgba($white, 0.25);
+      color: $white;
+      border-color: $white;
+    }
+  }
+  &-teal {
+    border-color: $teal;
+    background-color: $teal;
+    color: $white;
+
+    &:hover {
+      box-shadow: none;
+      background-color: lighten($teal, 5%);
+      color: $white;
+      border-color: lighten($teal, 5%);
+    }
+    &:active {
+      box-shadow: none;
+      background-color: darken($teal, 5%);
+      color: $white;
+      border-color: darken($teal, 5%);
+    }
+  }
+}

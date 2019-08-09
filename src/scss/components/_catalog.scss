@@ -1,0 +1,206 @@
+.grid-list {
+  &__item {
+    position: relative;
+    text-align: center;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 15px;
+    border: 1px solid rgba($gray, 0.5);
+    box-sizing: border-box;
+    user-select: none;
+    transition: 0.25s linear;
+    overflow: hidden;
+
+    .item__image {
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      padding-top: 75%;
+      box-sizing: border-box;
+      transition: 0.25s linear;
+      margin-bottom: 10px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      .overlay {
+        background-color: rgba($teal, 0.9);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: 0.25s linear;
+
+        .icon {
+          width: 32px;
+          height: 32px;
+          background-color: $white;
+          box-shadow: 0 1px 3px rgba($dark, 0.5);
+          border-radius: 50%;
+          box-sizing: border-box;
+          color: $dark;
+          border: 8px solid $white;
+          position: absolute;
+          top: 150%;
+          left: 50%;
+          margin-left: -16px;
+          transition: 0.25s 0.25s linear;
+        }
+      }
+
+      &:hover {
+        .overlay {
+          opacity: 1;
+
+          .icon {
+            top: 70%;
+          }
+        }
+      }
+    }
+
+    .item__text {
+      padding: 0 15px 10px;
+    }
+
+    .item__price {
+      position: absolute;
+      width: 86px;
+      height: 86px;
+      border-radius: 50%;
+      border: 1px solid $white;
+      top: 15px;
+      right: 15px;
+      @include gradient(45deg, $teal 5%, $green 95%);
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 10px 5px;
+      box-sizing: border-box;
+      line-height: 1;
+
+      .value {
+        font-size: 18px;
+        padding-bottom: 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .value__old {
+        font-size: 10px;
+        text-decoration: line-through;
+        opacity: 0.5;
+        line-height: 1;
+        padding: 5px 0;
+      }
+      .currency {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 10px;
+        padding-top: 5px;
+      }
+
+      &.action {
+        @include gradient(45deg, $pink 5%, $red 95%);
+        .value {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    .item__title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 500;
+      margin-bottom: 5px;
+
+      a {
+        color: $dark;
+        text-decoration: none;
+        display: block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &:hover {
+          color: $teal;
+        }
+      }
+    }
+
+    .item__description {
+      overflow: hidden;
+      position: relative;
+      height: 15px;
+      transition: 0.25s linear;
+
+      &:after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 15px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include gradient(180deg, rgba($white, 0) 5%, $white 95%);
+      }
+    }
+
+    .item__action {
+      border-top: 1px solid rgba($gray, 0.5);
+      padding: 10px 15px;
+    }
+
+    &:hover {
+      border-color: $teal;
+
+      .item__image {
+        padding-top: calc(75% - 30px);
+      }
+      .item__description {
+        height: 45px;
+      }
+      .item__price {
+        animation: energy 0.5s 1 ease-in-out;
+      }
+    }
+
+    &.out-of-stock {
+      filter: grayscale(1);
+      .item__price {
+        animation: none;
+      }
+      .item__image {
+        padding-top: 75%;
+
+        img {
+          opacity: 0.5;
+        }
+
+        .overlay {
+          display: none;
+        }
+      }
+      .item__description {
+        height: 15px;
+      }
+    }
+  }
+}
+.add-to-basket {
+  min-width: 130px;
+}

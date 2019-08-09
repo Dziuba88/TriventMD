@@ -1,0 +1,22 @@
+// Media Query & Drid //
+$columns: 12 !default;
+$gutter: 30px !default;
+// ExtraSmallScreen                  <= 480px
+$SmallScreen: 480px !default; //     481px - 756px
+$TabletScreen: 756px !default; //    757px - 1000px
+$MediumScreen: 1000px !default; //   1001px - 1200px
+$LargeScreen: 1200px !default; //    >= 1201px
+
+// COLORS
+$white: #ffffff !default;
+$black: #000000 !default;
+$light: #b5b5b5 !default;
+$gray: #878787 !default;
+$dark: #414141 !default;
+$teal: #2b827e !default;
+$green: #56b06e !default;
+$pink: #db5ac6 !default;
+$red: #db5959 !default;
+$orange: #e18c44 !default;
+
+$greenGradient: linear-gradient(to top right, #38827e, #77c98d);
