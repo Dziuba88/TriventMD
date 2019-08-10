@@ -33,6 +33,117 @@ body {
   }
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: $dark;
+  margin: 2em 0 0.5rem;
+  line-height: 1;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+a {
+  color: $teal;
+  text-decoration: none;
+  font-weight: 500;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.table {
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border-bottom: 1px solid $light;
+  width: 100%;
+  margin: 0 0 30px;
+  font-size: 14px;
+  line-height: 20px;
+
+  th,
+  td {
+    padding: 5px 10px;
+  }
+
+  thead,
+  tfoot {
+    font-size: 10px;
+    line-height: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $dark;
+  }
+
+  tbody {
+    tr {
+      border-top: 1px solid $light;
+      box-sizing: border-box;
+    }
+    th,
+    td {
+    }
+  }
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+.mb0 {
+  margin-bottom: 0;
+}
+.mb-30 {
+  margin-bottom: -30px;
+}
+.text {
+  &__red {
+    color: $red;
+  }
+  &__green {
+    color: $green;
+  }
+  &__teal {
+    color: $teal;
+  }
+  &__orange {
+    color: $orange;
+  }
+  &__center {
+    text-align: center;
+  }
+}
+
 .vmenu {
   display: flex;
   align-items: center;
@@ -260,6 +371,78 @@ body {
   }
 }
 
+.pagination {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  user-select: none;
+
+  &__total {
+    flex: 1;
+    padding-right: 15px;
+    strong {
+      color: $dark;
+    }
+  }
+
+  &__nav {
+    flex: none;
+
+    ul {
+      white-space: nowrap;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+
+        a,
+        span {
+          display: block;
+          width: 2em;
+          text-decoration: none;
+
+          color: $dark;
+          font-weight: 500;
+        }
+
+        a:hover {
+          color: $green;
+        }
+
+        &.disabled {
+          opacity: 0.5;
+
+          span,
+          a {
+            cursor: not-allowed;
+          }
+        }
+
+        &.current {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  @include smallScreenDown {
+    display: block;
+    text-align: center;
+
+    &__total {
+      padding: 0 0 10px;
+    }
+  }
+}
+.selectric-items {
+  max-height: 200px;
+}
 .form {
   &__input {
     padding-bottom: 15px;
@@ -345,4 +528,385 @@ body {
       height: 160px;
     }
   }
+
+  &__checkbox {
+    padding-bottom: 15px;
+
+    input {
+      position: fixed;
+      left: -9999px;
+    }
+
+    input + label {
+      user-select: none;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+
+      span {
+        display: block;
+        flex: none;
+      }
+
+      .input {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 34px;
+        height: 34px;
+        background-color: $white;
+        color: $white;
+        border: 1px solid $light;
+        margin-right: 10px;
+        transition: 0.15s linear;
+        font-size: 0;
+
+        .icon {
+          display: block;
+        }
+      }
+
+      .text {
+        padding: 7px 0;
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      &:hover .input {
+        border-color: $dark;
+        color: $light;
+        font-size: 14px;
+      }
+    }
+
+    input:checked + label {
+      .input {
+        border-color: $green;
+        color: $green;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    &__left {
+      flex: 1;
+      padding-right: 30px;
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+
+    &__sep {
+      width: 2em;
+      flex: none;
+      text-align: center;
+    }
+
+    .form__input {
+      padding: 0;
+      flex: 1;
+    }
+  }
+
+  &__quantity {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    input {
+      display: block;
+      width: 80px;
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 5px 10px;
+      border: 1px solid $light;
+      outline: 0;
+      text-align: center;
+      border-radius: 17px;
+      margin: 0 5px;
+
+      transition: 0.15s linear;
+
+      &::-webkit-input-placeholder {
+        color: $light;
+      }
+      &::-moz-placeholder {
+        color: $light;
+      }
+      &:-ms-input-placeholder {
+        color: $light;
+      }
+      &:-moz-placeholder {
+        color: $light;
+      }
+    }
+
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &__minus,
+    &__plus {
+      font-size: 24px;
+      user-select: none;
+      cursor: pointer;
+      transition: 0.15s ease-in-out;
+
+      &:hover {
+        color: $dark;
+      }
+
+      &.disabled {
+        cursor: default;
+        opacity: 0.1;
+        color: $dark !important;
+      }
+
+      .icon {
+        display: block;
+        width: 1em;
+        height: 1em;
+      }
+    }
+
+    &__minus {
+      color: $red;
+
+      &:active {
+        color: darken($red, 10%);
+      }
+    }
+    &__plus {
+      color: $green;
+
+      &:active {
+        color: darken($green, 10%);
+      }
+    }
+  }
+
+  .inputbox {
+    position: relative;
+    margin-bottom: 15px;
+
+    .inputfile {
+      width: 0.1px;
+      height: 0.1px;
+      opacity: 0;
+      overflow: hidden;
+      position: absolute;
+      z-index: -1;
+    }
+    .inputfile + label {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .inputfile + label .icon {
+    }
+    .inputfile + label {
+      color: $light;
+    }
+
+    .inputfile + label {
+      border: 1px solid $light;
+      background-color: $white;
+      padding: 0;
+    }
+
+    .inputfile:focus + label,
+    .inputfile.has-focus + label,
+    .inputfile + label:hover {
+      border-color: $dark;
+    }
+
+    small {
+      display: block;
+      font-size: 10px;
+      font-weight: 500;
+      line-height: 15px;
+      color: $dark;
+      padding-top: 5px;
+    }
+
+    .inputfile + label span {
+      display: block;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      flex: 1;
+      min-width: 0;
+      text-align: left;
+      padding: 6px 15px;
+      line-height: 20px;
+      min-height: 32px;
+      box-sizing: border-box;
+    }
+
+    .inputfile + label strong {
+      display: block;
+      flex: none;
+      white-space: nowrap;
+      background-color: $teal;
+      border: 1px solid currentColor;
+      color: $white;
+      transition: 0.15s ease;
+      padding: 6px 15px;
+      line-height: 20px;
+      font-weight: 500;
+      box-sizing: border-box;
+
+      .icon {
+        margin-right: 0.5em;
+      }
+    }
+
+    .inputfile:focus + label strong,
+    .inputfile.has-focus + label strong,
+    .inputfile + label:hover strong {
+      background-color: $green;
+    }
+
+    @include mobileScreen {
+      .inputfile + label {
+        display: block;
+
+        span,
+        strong {
+          display: block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .credit__checkbox {
+    input {
+      display: none;
+    }
+
+    input + label {
+      display: block;
+      margin: 0 0 15px;
+      padding: 30px;
+      border-radius: 15px;
+      border: 3px solid $light;
+      text-align: center;
+      transition: 0.15s linear;
+      cursor: pointer;
+      user-select: none;
+      font-weight: 500;
+
+      .value {
+        color: $green;
+        font-size: 32px;
+        line-height: 1;
+      }
+
+      .start {
+        font-size: 18px;
+        line-height: 1;
+        color: $red;
+      }
+
+      .period {
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        color: $teal;
+      }
+
+      span {
+        display: block;
+
+        small {
+          display: block;
+          font-size: 10px;
+          text-transform: uppercase;
+          line-height: 15px;
+          color: $gray;
+          font-weight: 500;
+          margin-bottom: 15px;
+          border-bottom: 1px solid $light;
+          padding-bottom: 10px;
+        }
+      }
+
+      .input {
+        font-size: 24px;
+        line-height: 1;
+        color: $light;
+        transition: 0.15s linear;
+      }
+    }
+
+    input + label:hover {
+      border-color: $dark;
+    }
+
+    input:checked + label {
+      border-color: $green;
+      .input {
+        color: $green;
+      }
+    }
+
+    @include mobileScreen {
+      input + label {
+        padding: 15px;
+        position: relative;
+
+        .period {
+          small {
+            border: 0;
+            margin-bottom: 0;
+            padding-bottom: 0;
+          }
+        }
+
+        span {
+          display: block;
+
+          small {
+            font-size: 10px;
+            margin-bottom: 5px;
+            padding-bottom: 5px;
+          }
+        }
+
+        .input {
+          position: absolute;
+          top: 15px;
+          left: 15px;
+        }
+      }
+    }
+  }
+}
+.modal .form__footer.center-block {
+  text-align: center;
+  display: block;
+}
+.modal a {
+  white-space: nowrap;
 }

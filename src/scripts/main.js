@@ -1,5 +1,11 @@
-//@prepros-prepend ./plugins/swiper.js
-//@prepros-prepend ./plugins/transition.js
-//@prepros-prepend ./plugins/dropdown.js
-//@prepros-prepend ./plugins/tabs.js
-//@prepros-prepend ./plugins/jquery.countdown.js
+//@prepros-prepend ./plugins/scrollbar.js;
+//@prepros-prepend ./plugins/swiper.js;
+//@prepros-prepend ./plugins/transition.js;
+//@prepros-prepend ./plugins/dropdown.js;
+//@prepros-prepend ./plugins/tabs.js;
+//@prepros-prepend ./plugins/collapse.js;
+//@prepros-prepend ./plugins/countdown.js;
+//@prepros-prepend ./plugins/nouislider.js;
+//@prepros-prepend ./plugins/selectric.js;
+//@prepros-prepend ./plugins/modal.js;
+//@prepros-prepend ./plugins/upload.js;

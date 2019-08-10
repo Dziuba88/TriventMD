@@ -1,0 +1,174 @@
+.mobile__filters: button.btn(data-toggle="filters")
+  svg.icon: use(xlink:href="#icon-filters")
+  span Показать Фильтры
+.catalog__filters
+  .catalog__filters__categories
+    h4: span Категории
+    ul#categories(role='tablist', aria-multiselectable="false")
+      li.panel
+        span.tab(role="tab")
+          a.parent.current(href='#') Вентиляция
+          a.collapsed(data-toggle='collapse' data-parent='#categories' href='#cat-id-1'): svg.icon: use(xlink:href="#next")
+        ul.collapse(role='tabpanel')#cat-id-1
+          li: a(href="") Child Category Name
+          li: a(href="").current Child Category Name
+          li: a(href="") Child Category Name
+      li.panel
+        span.tab(role="tab")
+          a.parent(href='#') Кондиционеры
+          a.collapsed(data-toggle='collapse' data-parent='#categories' href='#cat-id-2'): svg.icon: use(xlink:href="#next")
+        ul.collapse(role='tabpanel')#cat-id-2
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+      li.panel
+        span.tab(role="tab")
+          a.parent(href='#') Отопление
+          a.collapsed(data-toggle='collapse' data-parent='#categories' href='#cat-id-3'): svg.icon: use(xlink:href="#next")
+        ul.collapse(role='tabpanel')#cat-id-3
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+      li.panel
+        span.tab(role="tab")
+          a.parent(href='#') Сплит системы
+          a.collapsed(data-toggle='collapse' data-parent='#categories' href='#cat-id-4'): svg.icon: use(xlink:href="#next")
+        ul.collapse(role='tabpanel')#cat-id-4
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+      li.panel
+        span.tab(role="tab")
+          a.parent(href='#') Монтажные элементы
+          a.collapsed(data-toggle='collapse' data-parent='#categories' href='#cat-id-5'): svg.icon: use(xlink:href="#next")
+        ul.collapse(role='tabpanel')#cat-id-5
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+          li: a(href="") Child Category Name
+  .catalog__filters__price
+    h4: span цена mdl
+    form.form.price__filter
+      .form__group
+        .form__input: input.price__filter__min(type="tel", name="price__min")
+        .form__group__sep -
+        .form__input: input.price__filter__max(type="tel", name="price__max")
+      .price__filter__range
+      button(type="submit").btn применить
+  .catalog__filters__brands
+    h4: span бренды
+    .brands__list(data-simplebar)
+      ul
+        li: a(href="")
+          span Aerostar
+          small (341)
+        li: a(href="").current
+          span Bahcivan
+          small (91)
+        li: a(href="").current
+          span Ballu
+          small (33)
+        li: a(href="")
+          span BLAUBERG
+          small (147)
+        li: a(href="")
+          span Colibri
+          small (56)
+        li: a(href="")
+          span Danfoss
+          small (2)
+        li: a(href="")
+          span Dospel
+          small (173)
+        li: a(href="")
+          span Duka
+          small (10)
+        li: a(href="")
+          span Dundar
+          small (44)
+        li: a(href="")
+          span Electrolux
+          small (108)
+        li: a(href="")
+          span EMMECOM
+          small (56)
+        li: a(href="")
+          span Flowair
+          small (37)
+        li: a(href="")
+          span Frico
+          small (297)
+        li: a(href="")
+          span Gree
+          small (7)
+        li: a(href="")
+          span Helios
+          small (16)
+        li: a(href="")
+          span Konung
+          small (13)
+        li: a(href="")
+          span Master
+          small (63)
+        li: a(href="")
+          span Mitsubishi Electric
+          small (15)
+        li: a(href="")
+          span Neoclima
+          small (96)
+        li: a(href="")
+          span O.ERRE
+          small (59)
+        li: a(href="")
+          span Ostberg
+          small (38)
+        li: a(href="")
+          span Rosenberg
+          small (307)
+        li: a(href="")
+          span Ruck
+          small (254)
+        li: a(href="")
+          span Salda
+          small (17)
+        li: a(href="")
+          span Sentera Controls
+          small (1)
+        li: a(href="")
+          span Soler & Palau
+          small (350)
+        li: a(href="")
+          span Sunon
+          small (58)
+        li: a(href="")
+          span Systemair
+          small (157)
+        li: a(href="")
+          span Thermoscreens
+          small (11)
+        li: a(href="")
+          span Turbovent
+          small (95)
+        li: a(href="")
+          span Vortice
+          small (142)
+        li: a(href="")
+          span VTS
+          small (56)
+        li: a(href="")
+          span Weiguang
+          small (49)
+        li: a(href="")
+          span Вентиляторы Украина
+          small (460)
+        li: a(href="")
+          span ВЕНТС (VENTS)
+          small (4014)
+        li: a(href="")
+          span Домовент
+          small (140)
+        li: a(href="")
+          span Тепломаш
+          small (269)
+        li: a(href="")
+          span Термия
+          small (17)

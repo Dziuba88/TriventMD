@@ -1,0 +1,79 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Сотрудничество'
+  - var description = 'Мы всегда готовы к сотрудничеству с широким кругом заказчиков.<br>Компания Trivent Com открыта для долгосрочного и взаимовыгодного сотрудничества.'
+  - var page = 'partners'
+block CONTENT
+  // breadcrumbs
+  .breadcrumbs
+    .container
+      ul.vmenu
+        li.vmenu__item.first: a.vmenu__link(href="")
+          svg.icon: use(xlink:href="#icon-home")
+          span Главная
+        li.vmenu__item.last: span=title
+  // Base Content
+  .section.partners__info
+    .container
+      h2 Кому будет интересна совместная работа с нами:
+      ul
+        li Торгующим климатическим оборудованием компаниям и отдельным предпринимателям мы предлагаем только сертифицированное высококачественное оборудование по самым выгодным ценам, с гарантией от производителя, с продуманной доставкой в любой регион Молдовы и налаженным сервисным обслуживанием. Наши консультанты оказывают поддержку в правильном подборе и расчете параметров оборудования.
+        li Проектным организациям, архитектурным бюро и институтам предлагаем полную информацию и данные по техническим возможностям, преимуществам, монтажу и обслуживанию отдельных видов сертифицированного оборудования. Наши инженеры, используя программное обеспечение, предлагаемое ведущими производителями, оказывают помощь дизайнерам интерьеров и проектантам в подборе нужных по характеристикам моделей и подскажут самое оригинальное, экономически выгодное решение. 
+        li Строительным организациям и отдельным монтажным бригадам и теплотехническим компаниям предлагаем широчайший ассортимент энергоэффективного климатического оборудования по специальным ценам для внедрения в современных системах вентиляции, кондиционирования, отопления жилых зданий и объектов коммерческого, сельскохозяйственного или промышленного назначения. Наши проектанты помогут в решении оригинальных и инновационных проектов любой сложности.
+        li Для инвесторов и девелоперов, занимающихся строительным бизнесом, мы предлагаем взаимовыгодные условия для долгосрочного  сотрудничества и поставки оборудования по специальным ценам от производителя под конкретные объекты. Сделайте ваши проекты на уровень выше.
+      p <b>Trivent Com</b> – надежный партнер и ответственный поставщик передового климатического оборудования.<br>С нами выгодно сотрудничать и перспективно развивать бизнес.
+  .section.partners__form
+    .container
+      h2.partners__form__header: span стать партнером
+      .row: .col.lg-10.olg-1
+        form.form(action="")
+          .row
+            .col.sm-5
+              .form__input: input(type="text", placeholder="Ваша специализация", name="prt_spec")
+              .form__checkbox
+                input#spec1(type="checkbox", name="prt_spec_def", value="1")
+                label(for="spec1")
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Строительная организация;
+              .form__checkbox
+                input#spec2(type="checkbox", name="prt_spec_def", value="2")
+                label(for="spec2") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Монтажная бригада;
+              .form__checkbox
+                input#spec3(type="checkbox", name="prt_spec_def", value="3")
+                label(for="spec3") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Проектная организация;
+              .form__checkbox
+                input#spec4(type="checkbox", name="prt_spec_def", value="4")
+                label(for="spec4") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Архитектурное бюро;
+              .form__checkbox
+                input#spec5(type="checkbox", name="prt_spec_def", value="5")
+                label(for="spec5") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Студия дизайна интерьеров;
+              .form__checkbox
+                input#spec6(type="checkbox", name="prt_spec_def", value="6")
+                label(for="spec6") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Торгующая организация;
+              .form__checkbox
+                input#spec7(type="checkbox", name="prt_spec_def", value="7")
+                label(for="spec7") 
+                  span.input: svg.icon: use(xlink:href='#icon-check')
+                  span.text Другое.
+            .col.sm-7
+              .form__input: input(type="text", placeholder="Ваша компания *", required, name="prt_company")
+              .row
+                .col.sm-6: .form__input: input(type="text", placeholder="Имя *", required, name="prt_firstname")
+                .col.sm-6: .form__input: input(type="text", placeholder="Фамилия *", required, name="prt_lastname")
+                .col.sm-6: .form__input.error: input(type="tel", placeholder="Телефон *", required, name="prt_tel")
+                .col.sm-6: .form__input.success: input(type="email", placeholder="e-Mail *", required, name="prt_email", value="test@test.com")
+              .form__input: textarea(cols="30", rows="10", placeholder="Комментарий", name="prt_message")
+              .form__footer
+                .form__footer__left Ваш электронный адрес не будет опубликован.<br>Обязательные поля помечены *
+                .form__footer__right: button(type="submit").btn отправить
+

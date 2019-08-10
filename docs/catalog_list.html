@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>TRIVENT :: Вентиляция</title>
+    <!-- FAVICON & THEME-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="favicons/site.webmanifest"/>
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#2b827e"/>
+    <link rel="shortcut icon" href="favicons/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png"/>
+    <meta name="msapplication-config" content="favicons/browserconfig.xml"/>
+    <meta name="theme-color" content="#2b827e"/>
+    <!-- Project Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;display=swap&amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body class="trv catalog">
+    <!-- Global HEADER-->
+    <header class="trv-header">
+      <div class="trv-header__wraper">
+        <div class="trv-header__top">
+          <div class="container">
+            <div class="trv-header__top__nav">
+              <ul class="vmenu">
+                <li class="vmenu__item"><a class="vmenu__link" href="#">О нас</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Наши объекты</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Сотрудничество</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Акции</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Услуги</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Вакансии</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="trv-header__separator"></div>
+            <div class="trv-header__top__lang">
+              <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                  <svg class="dropdown__caret">
+                    <use xlink:href="#caret"></use>
+                  </svg></span>
+                <div class="dropdown__menu">
+                  <ul class="hmenu">
+                    <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trv-header__bottom">
+          <div class="container">
+            <div class="trv-header__bottom__wraper">
+              <div class="trv-header__brand"><a href="">
+                  <svg class="logo">
+                    <use xlink:href="#TriventLogoWhite"></use>
+                  </svg></a></div>
+              <div class="trv-header__separator"></div>
+              <div class="trv-header__contacts"><a class="big-phone" href="tel:+373 69 777 383">
+                  <svg class="icon">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg><span>+373 69 777 383</span></a><a href="mailto:info@trivent.md">
+                  <svg class="icon">
+                    <use xlink:href="#icon-envelope"></use>
+                  </svg><span>info@trivent.md</span></a></div>
+              <div class="trv-header__contacts"><a href="tel:+373 22 854 006">
+                  <svg class="icon">
+                    <use xlink:href="#icon-telephone"></use>
+                  </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                  <svg class="icon">
+                    <use xlink:href="#icon-fax"></use>
+                  </svg><span>+373 22 854 925</span></a></div>
+              <div class="trv-header__action">
+                <button class="btn btn-accent" data-modal="#calc-form">
+                  <svg class="icon">
+                    <use xlink:href="#icon-calculator"></use>
+                  </svg><span>Расчет стоимости</span>
+                </button>
+              </div>
+              <div class="trv-header__cart"><a class="cart-button" href="">
+                  <svg class="icon">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg><span class="counter">25</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar__left">
+                <button class="show__navbar">
+                  <svg class="icon">
+                    <use xlink:href="#icon-bars"></use>
+                  </svg>
+                </button>
+                <div class="navbar__nav">
+                  <ul class="vmenu">
+                    <li class="vmenu__item current"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-fan"></use>
+                        </svg><span>Вентиляция</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-cold"></use>
+                        </svg><span>Кондиционеры</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-warm"></use>
+                        </svg><span>Отопление</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-sett"></use>
+                        </svg><span>Монтажные элементы</span></a></li>
+                  </ul>
+                </div>
+                <form class="product__search" method="get" action="">
+                  <label class="icon" for="header-search">
+                    <svg class="icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </label>
+                  <input id="header-search" autocomplete="off" type="search" name="query" placeholder="Поиск по каталогу"/>
+                  <button class="btn xs btn-teal" type="submit">Найти</button>
+                </form>
+              </div>
+              <div class="navbar__right">
+                <button class="navbar__search-toogle">
+                  <svg class="icon">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__mobile">
+          <div class="container">
+            <div class="navbar__mobile__header">
+              <div class="header-left">
+                <div class="navbar__mobile__lang">
+                  <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                      <svg class="dropdown__caret">
+                        <use xlink:href="#caret"></use>
+                      </svg></span>
+                    <div class="dropdown__menu">
+                      <ul class="hmenu">
+                        <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-right">
+                <button class="close__navbar">
+                  <svg class="icon">
+                    <use xlink:href="#icon-cancel"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="navbar__mobile__nav">
+              <ul class="cat-nav">
+                <li class="cat-nav__item"><a class="cat-nav__link current" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-fan"></use>
+                    </svg><span>Вентиляция</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-cold"></use>
+                    </svg><span>Кондиционеры</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-warm"></use>
+                    </svg><span>Отопление</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-sett"></use>
+                    </svg><span>Монтажные элементы</span></a></li>
+              </ul>
+              <ul class="hmenu">
+                <li class="hmenu__item"><a class="hmenu__link active" href="#">О нас</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Наши объекты</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Сотрудничество</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Акции</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Услуги</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Вакансии</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="navbar__mobile__action" data-modal="#calc-form">
+              <button class="btn btn-accent lg">
+                <svg class="icon">
+                  <use xlink:href="#icon-calculator"></use>
+                </svg><span>Расчет стоимости</span>
+              </button>
+            </div>
+            <div class="navbar__mobile__contacts"><a href="tel:+373 69 777 383">
+                <svg class="icon">
+                  <use xlink:href="#icon-phone"></use>
+                </svg><span>+373 69 777 383</span></a><a href="tel:+373 22 854 006">
+                <svg class="icon">
+                  <use xlink:href="#icon-telephone"></use>
+                </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                <svg class="icon">
+                  <use xlink:href="#icon-fax"></use>
+                </svg><span>+373 22 854 925</span></a><a href="mailto:info@trivent.md">
+                <svg class="icon">
+                  <use xlink:href="#icon-envelope"></use>
+                </svg><span>info@trivent.md</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="trv-header__title">
+        <div class="container">
+          <h1>Вентиляция</h1>
+          <p>Важность вентиляции для организма не требует доказательств.<br>Одним из элементов воздуха является кислород, который жизненно необходим нашему организму.</p>
+        </div>
+      </div>
+    </header>
+    <!-- PAGE CONTENT-->
+    <main class="trv-content">
+      <!-- breadcrumbs-->
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="vmenu">
+            <li class="vmenu__item first"><a class="vmenu__link" href="">
+                <svg class="icon">
+                  <use xlink:href="#icon-home"></use>
+                </svg><span>Главная</span></a></li>
+            <li class="vmenu__item last"><span>Вентиляция</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Base Content-->
+      <div class="catalog__wraper">
+        <div class="container">
+          <div class="row">
+            <div class="col lg-3 md-4">
+              <div class="mobile__filters">
+                <button class="btn" data-toggle="filters">
+                  <svg class="icon">
+                    <use xlink:href="#icon-filters"></use>
+                  </svg><span>Показать Фильтры</span>
+                </button>
+              </div>
+              <div class="catalog__filters">
+                <div class="catalog__filters__categories">
+                  <h4><span>Категории</span></h4>
+                  <ul id="categories" role="tablist" aria-multiselectable="false">
+                    <li class="panel"><span class="tab" role="tab"><a class="parent current" href="#">Вентиляция</a><a class="collapsed" data-toggle="collapse" data-parent="#categories" href="#cat-id-1">
+                          <svg class="icon">
+                            <use xlink:href="#next"></use>
+                          </svg></a></span>
+                      <ul class="collapse" role="tabpanel" id="cat-id-1">
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a class="current" href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                      </ul>
+                    </li>
+                    <li class="panel"><span class="tab" role="tab"><a class="parent" href="#">Кондиционеры</a><a class="collapsed" data-toggle="collapse" data-parent="#categories" href="#cat-id-2">
+                          <svg class="icon">
+                            <use xlink:href="#next"></use>
+                          </svg></a></span>
+                      <ul class="collapse" role="tabpanel" id="cat-id-2">
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                      </ul>
+                    </li>
+                    <li class="panel"><span class="tab" role="tab"><a class="parent" href="#">Отопление</a><a class="collapsed" data-toggle="collapse" data-parent="#categories" href="#cat-id-3">
+                          <svg class="icon">
+                            <use xlink:href="#next"></use>
+                          </svg></a></span>
+                      <ul class="collapse" role="tabpanel" id="cat-id-3">
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                      </ul>
+                    </li>
+                    <li class="panel"><span class="tab" role="tab"><a class="parent" href="#">Сплит системы</a><a class="collapsed" data-toggle="collapse" data-parent="#categories" href="#cat-id-4">
+                          <svg class="icon">
+                            <use xlink:href="#next"></use>
+                          </svg></a></span>
+                      <ul class="collapse" role="tabpanel" id="cat-id-4">
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                      </ul>
+                    </li>
+                    <li class="panel"><span class="tab" role="tab"><a class="parent" href="#">Монтажные элементы</a><a class="collapsed" data-toggle="collapse" data-parent="#categories" href="#cat-id-5">
+                          <svg class="icon">
+                            <use xlink:href="#next"></use>
+                          </svg></a></span>
+                      <ul class="collapse" role="tabpanel" id="cat-id-5">
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                        <li><a href="">Child Category Name</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="catalog__filters__price">
+                  <h4><span>цена mdl</span></h4>
+                  <form class="form price__filter">
+                    <div class="form__group">
+                      <div class="form__input">
+                        <input class="price__filter__min" type="tel" name="price__min"/>
+                      </div>
+                      <div class="form__group__sep">-</div>
+                      <div class="form__input">
+                        <input class="price__filter__max" type="tel" name="price__max"/>
+                      </div>
+                    </div>
+                    <div class="price__filter__range"></div>
+                    <button class="btn" type="submit">применить</button>
+                  </form>
+                </div>
+                <div class="catalog__filters__brands">
+                  <h4><span>бренды</span></h4>
+                  <div class="brands__list" data-simplebar="data-simplebar">
+                    <ul>
+                      <li><a href=""><span>Aerostar</span><small>(341)</small></a></li>
+                      <li><a class="current" href=""><span>Bahcivan</span><small>(91)</small></a></li>
+                      <li><a class="current" href=""><span>Ballu</span><small>(33)</small></a></li>
+                      <li><a href=""><span>BLAUBERG</span><small>(147)</small></a></li>
+                      <li><a href=""><span>Colibri</span><small>(56)</small></a></li>
+                      <li><a href=""><span>Danfoss</span><small>(2)</small></a></li>
+                      <li><a href=""><span>Dospel</span><small>(173)</small></a></li>
+                      <li><a href=""><span>Duka</span><small>(10)</small></a></li>
+                      <li><a href=""><span>Dundar</span><small>(44)</small></a></li>
+                      <li><a href=""><span>Electrolux</span><small>(108)</small></a></li>
+                      <li><a href=""><span>EMMECOM</span><small>(56)</small></a></li>
+                      <li><a href=""><span>Flowair</span><small>(37)</small></a></li>
+                      <li><a href=""><span>Frico</span><small>(297)</small></a></li>
+                      <li><a href=""><span>Gree</span><small>(7)</small></a></li>
+                      <li><a href=""><span>Helios</span><small>(16)</small></a></li>
+                      <li><a href=""><span>Konung</span><small>(13)</small></a></li>
+                      <li><a href=""><span>Master</span><small>(63)</small></a></li>
+                      <li><a href=""><span>Mitsubishi Electric</span><small>(15)</small></a></li>
+                      <li><a href=""><span>Neoclima</span><small>(96)</small></a></li>
+                      <li><a href=""><span>O.ERRE</span><small>(59)</small></a></li>
+                      <li><a href=""><span>Ostberg</span><small>(38)</small></a></li>
+                      <li><a href=""><span>Rosenberg</span><small>(307)</small></a></li>
+                      <li><a href=""><span>Ruck</span><small>(254)</small></a></li>
+                      <li><a href=""><span>Salda</span><small>(17)</small></a></li>
+                      <li><a href=""><span>Sentera Controls</span><small>(1)</small></a></li>
+                      <li><a href=""><span>Soler & Palau</span><small>(350)</small></a></li>
+                      <li><a href=""><span>Sunon</span><small>(58)</small></a></li>
+                      <li><a href=""><span>Systemair</span><small>(157)</small></a></li>
+                      <li><a href=""><span>Thermoscreens</span><small>(11)</small></a></li>
+                      <li><a href=""><span>Turbovent</span><small>(95)</small></a></li>
+                      <li><a href=""><span>Vortice</span><small>(142)</small></a></li>
+                      <li><a href=""><span>VTS</span><small>(56)</small></a></li>
+                      <li><a href=""><span>Weiguang</span><small>(49)</small></a></li>
+                      <li><a href=""><span>Вентиляторы Украина</span><small>(460)</small></a></li>
+                      <li><a href=""><span>ВЕНТС (VENTS)</span><small>(4014)</small></a></li>
+                      <li><a href=""><span>Домовент</span><small>(140)</small></a></li>
+                      <li><a href=""><span>Тепломаш</span><small>(269)</small></a></li>
+                      <li><a href=""><span>Термия</span><small>(17)</small></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col lg-9 md-8">
+              <div class="catalog__image"><img src="tmp/category_img.png" alt=""/></div>
+              <div class="catalog__list">
+                <div class="catalog__list__sort">
+                  <div class="sort-left">
+                    <ul class="view-layout">
+                      <li><a href="">
+                          <svg class="icon">
+                            <use xlink:href="#icon-grid"></use>
+                          </svg></a></li>
+                      <li><a class="current" href="">
+                          <svg class="icon">
+                            <use xlink:href="#icon-list"></use>
+                          </svg></a></li>
+                    </ul>
+                  </div>
+                  <div class="sort-right">
+                    <select id="sort" name="sort" style="width:160px">
+                      <option value="newlest">Вначале новые</option>
+                      <option value="newlest">Вначале популярные</option>
+                      <option value="newlest">Вначале подешевле</option>
+                      <option value="newlest">Вначале подороже</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price action">
+                          <div class="value">1250.00</div>
+                          <div class="value__old">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_noimage.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item out-of-stock"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket" disabled="disabled">нет в наличии</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price action">
+                          <div class="value">1250.00</div>
+                          <div class="value__old">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_noimage.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item out-of-stock"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket" disabled="disabled">нет в наличии</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price action">
+                          <div class="value">1250.00</div>
+                          <div class="value__old">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item"><a class="item__image" href=""><img src="tmp/shop_item_noimage.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket">в корзину</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list__item out-of-stock"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__body">
+                    <div class="item__text">
+                      <div class="item__title"><a href="">Ther products name demo</a></div>
+                      <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                    </div>
+                    <div class="item__action">
+                      <div class="item__action__left">
+                        <div class="item__price">
+                          <div class="value">1250.00</div>
+                          <div class="currency">mdl</div>
+                        </div>
+                      </div>
+                      <div class="item__action__center">
+                        <div class="form__quantity">
+                          <label class="form__quantity__minus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-minus"></use>
+                            </svg>
+                          </label>
+                          <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                          <label class="form__quantity__plus">
+                            <svg class="icon">
+                              <use xlink:href="#icon-plus"></use>
+                            </svg>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="item__action__right">
+                        <button class="btn add-to-basket" disabled="disabled">нет в наличии</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <div class="pagination__total">всего <strong>1235</strong> товаров</div>
+                <div class="pagination__nav">
+                  <ul>
+                    <li><a href="">
+                        <svg class="icon">
+                          <use xlink:href="#first"></use>
+                        </svg></a></li>
+                    <li><a href="">
+                        <svg class="icon">
+                          <use xlink:href="#prev"></use>
+                        </svg></a></li>
+                    <li><a href="">5</a></li>
+                    <li class="current"><span>6</span></li>
+                    <li><a href="">7</a></li>
+                    <li><a href="">
+                        <svg class="icon">
+                          <use xlink:href="#next"></use>
+                        </svg></a></li>
+                    <li class="disabled"><span>
+                        <svg class="icon">
+                          <use xlink:href="#last"></use>
+                        </svg></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Global FOOTER-->
+    <div class="section clients">
+      <div class="container">
+        <h2 class="clients__header"><span>Наши клиенты</span></h2>
+        <div class="clients-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="tmp/logo_brand1-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand2-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand3-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand4-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand5-200x95.png" alt=""/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="trv-footer">
+      <div class="trv-footer__wraper">
+        <div class="container">
+          <div class="row">
+            <div class="col md-2 sm-4">
+              <div class="trv-footer__nav">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">О нас</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Наши объекты</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Сотрудничество</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Акции</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Услуги</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Блог</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col md-3 sm-4">
+              <div class="trv-footer__nav">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Вентиляция</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Кондиционирование</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Отопление</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Монтажные элементы</a></li>
+                </ul>
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Ваша Корзина</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Ответы на вопросы</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col md-4 sm-last">
+              <div class="trv-footer__about">
+                <h4>О Компании</h4>
+                <p>«Trivent Com» SRL была основана 29.08.2009 и работает на рынке Республики Молдова в области проектирования, поставки, монтажа и технического обслуживания систем отопления, вентиляции, кондиционирования, отопления и охлаждения.</p><a class="readmore" href="">
+                  <svg class="icon">
+                    <use xlink:href="#next"></use>
+                  </svg><span>Подробнее</span></a>
+              </div>
+            </div>
+            <div class="col md-3 sm-4">
+              <div class="trv-footer__contacts">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><span class="fmenu__text">
+                      <svg class="icon">
+                        <use xlink:href="#icon-address"></use>
+                      </svg><span>2071, РМ Кишинев<br>ул. Alba Iulia 75</span></span></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 69 777 383">
+                      <svg class="icon">
+                        <use xlink:href="#icon-phone"></use>
+                      </svg><span>+373 69 777 383</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 22 854 006">
+                      <svg class="icon">
+                        <use xlink:href="#icon-telephone"></use>
+                      </svg><span>+373 22 854 006</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 22 854 925">
+                      <svg class="icon">
+                        <use xlink:href="#icon-fax"></use>
+                      </svg><span>+373 22 854 925</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="mailto:info@trivent.md">
+                      <svg class="icon">
+                        <use xlink:href="#icon-envelope"></use>
+                      </svg><span>info@trivent.md</span></a></li>
+                </ul>
+              </div>
+              <div class="trv-footer__social">
+                <ul class="smenu">
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-facebook"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-linkedin"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trv-footer__copyright">Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены</div>
+    </footer>
+    <!--CALC MODAL-->
+    <div class="modal" id="calc-form">
+      <h3 class="modal__title">Расчет проекта вентиляции вашего дома</h3>
+      <form class="form" action="">
+        <div class="row">
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Имя *" required="required" name="calc_firstname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Фамилия *" required="required" name="calc_lastname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="tel" placeholder="Телефон *" required="required" name="calc_tel"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="email" placeholder="e-Mail *" required="required" name="calc_email"/>
+            </div>
+          </div>
+        </div>
+        <div class="inputbox">
+          <input class="inputfile" id="calc_files" type="file" name="calc_files" data-multiple-caption="{count} файлов выбрано" multiple=""/>
+          <label for="calc_files"><span></span><strong>
+              <svg class="icon">
+                <use xlink:href="#icon-upload"></use>
+              </svg>Выберите файлы&mldr;</strong></label><small>приложите один или несколько файлов до 10МБ в формате PDF, Word, JPEG</small>
+        </div>
+        <div class="form__input">
+          <textarea cols="30" rows="10" placeholder="Комментарий" name="calc_comment"></textarea>
+        </div>
+        <div class="form__footer center-block">
+          <button class="btn lg btn-accent" type="submit">отправить</button>
+        </div>
+      </form>
+    </div>
+    <!-- Global SCRIPS-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

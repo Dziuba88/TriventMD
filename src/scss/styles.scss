@@ -8,6 +8,10 @@
 @import './plugins/swiper';
 @import './plugins/dropdown';
 @import './plugins/tabs';
+@import './plugins/slider';
+@import './plugins/scrollbar';
+@import './plugins/select';
+@import './plugins/modal';
 
 // COMPONENTS
 @import './components/header';
@@ -15,3 +19,4 @@
 @import './components/homepage';
 @import './components/catalog';
 @import './components/contacts';
+@import './components/partners';

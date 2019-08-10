@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>TRIVENT :: Вентиляция</title>
+    <!-- FAVICON & THEME-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="favicons/site.webmanifest"/>
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#2b827e"/>
+    <link rel="shortcut icon" href="favicons/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png"/>
+    <meta name="msapplication-config" content="favicons/browserconfig.xml"/>
+    <meta name="theme-color" content="#2b827e"/>
+    <!-- Project Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;display=swap&amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body class="trv catalog--item">
+    <!-- Global HEADER-->
+    <header class="trv-header">
+      <div class="trv-header__wraper">
+        <div class="trv-header__top">
+          <div class="container">
+            <div class="trv-header__top__nav">
+              <ul class="vmenu">
+                <li class="vmenu__item"><a class="vmenu__link" href="#">О нас</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Наши объекты</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Сотрудничество</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Акции</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Услуги</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Вакансии</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="trv-header__separator"></div>
+            <div class="trv-header__top__lang">
+              <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                  <svg class="dropdown__caret">
+                    <use xlink:href="#caret"></use>
+                  </svg></span>
+                <div class="dropdown__menu">
+                  <ul class="hmenu">
+                    <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trv-header__bottom">
+          <div class="container">
+            <div class="trv-header__bottom__wraper">
+              <div class="trv-header__brand"><a href="">
+                  <svg class="logo">
+                    <use xlink:href="#TriventLogoWhite"></use>
+                  </svg></a></div>
+              <div class="trv-header__separator"></div>
+              <div class="trv-header__contacts"><a class="big-phone" href="tel:+373 69 777 383">
+                  <svg class="icon">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg><span>+373 69 777 383</span></a><a href="mailto:info@trivent.md">
+                  <svg class="icon">
+                    <use xlink:href="#icon-envelope"></use>
+                  </svg><span>info@trivent.md</span></a></div>
+              <div class="trv-header__contacts"><a href="tel:+373 22 854 006">
+                  <svg class="icon">
+                    <use xlink:href="#icon-telephone"></use>
+                  </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                  <svg class="icon">
+                    <use xlink:href="#icon-fax"></use>
+                  </svg><span>+373 22 854 925</span></a></div>
+              <div class="trv-header__action">
+                <button class="btn btn-accent" data-modal="#calc-form">
+                  <svg class="icon">
+                    <use xlink:href="#icon-calculator"></use>
+                  </svg><span>Расчет стоимости</span>
+                </button>
+              </div>
+              <div class="trv-header__cart"><a class="cart-button" href="">
+                  <svg class="icon">
+                    <use xlink:href="#icon-cart"></use>
+                  </svg><span class="counter">25</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar__left">
+                <button class="show__navbar">
+                  <svg class="icon">
+                    <use xlink:href="#icon-bars"></use>
+                  </svg>
+                </button>
+                <div class="navbar__nav">
+                  <ul class="vmenu">
+                    <li class="vmenu__item current"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-fan"></use>
+                        </svg><span>Вентиляция</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-cold"></use>
+                        </svg><span>Кондиционеры</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-warm"></use>
+                        </svg><span>Отопление</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="#icon-sett"></use>
+                        </svg><span>Монтажные элементы</span></a></li>
+                  </ul>
+                </div>
+                <form class="product__search" method="get" action="">
+                  <label class="icon" for="header-search">
+                    <svg class="icon">
+                      <use xlink:href="#icon-search"></use>
+                    </svg>
+                  </label>
+                  <input id="header-search" autocomplete="off" type="search" name="query" placeholder="Поиск по каталогу"/>
+                  <button class="btn xs btn-teal" type="submit">Найти</button>
+                </form>
+              </div>
+              <div class="navbar__right">
+                <button class="navbar__search-toogle">
+                  <svg class="icon">
+                    <use xlink:href="#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__mobile">
+          <div class="container">
+            <div class="navbar__mobile__header">
+              <div class="header-left">
+                <div class="navbar__mobile__lang">
+                  <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                      <svg class="dropdown__caret">
+                        <use xlink:href="#caret"></use>
+                      </svg></span>
+                    <div class="dropdown__menu">
+                      <ul class="hmenu">
+                        <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-right">
+                <button class="close__navbar">
+                  <svg class="icon">
+                    <use xlink:href="#icon-cancel"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="navbar__mobile__nav">
+              <ul class="cat-nav">
+                <li class="cat-nav__item"><a class="cat-nav__link current" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-fan"></use>
+                    </svg><span>Вентиляция</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-cold"></use>
+                    </svg><span>Кондиционеры</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-warm"></use>
+                    </svg><span>Отопление</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="#icon-sett"></use>
+                    </svg><span>Монтажные элементы</span></a></li>
+              </ul>
+              <ul class="hmenu">
+                <li class="hmenu__item"><a class="hmenu__link active" href="#">О нас</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Наши объекты</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Сотрудничество</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Акции</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Услуги</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Вакансии</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="navbar__mobile__action" data-modal="#calc-form">
+              <button class="btn btn-accent lg">
+                <svg class="icon">
+                  <use xlink:href="#icon-calculator"></use>
+                </svg><span>Расчет стоимости</span>
+              </button>
+            </div>
+            <div class="navbar__mobile__contacts"><a href="tel:+373 69 777 383">
+                <svg class="icon">
+                  <use xlink:href="#icon-phone"></use>
+                </svg><span>+373 69 777 383</span></a><a href="tel:+373 22 854 006">
+                <svg class="icon">
+                  <use xlink:href="#icon-telephone"></use>
+                </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                <svg class="icon">
+                  <use xlink:href="#icon-fax"></use>
+                </svg><span>+373 22 854 925</span></a><a href="mailto:info@trivent.md">
+                <svg class="icon">
+                  <use xlink:href="#icon-envelope"></use>
+                </svg><span>info@trivent.md</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="trv-header__title">
+      </div>
+    </header>
+    <!-- PAGE CONTENT-->
+    <main class="trv-content">
+      <!-- breadcrumbs-->
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="vmenu">
+            <li class="vmenu__item first"><a class="vmenu__link" href="">
+                <svg class="icon">
+                  <use xlink:href="#icon-home"></use>
+                </svg><span>Главная</span></a></li>
+            <li class="vmenu__item first"><a class="vmenu__link" href="">Монтажные элементы</a></li>
+            <li class="vmenu__item first"><a class="vmenu__link" href="">Решетки и диффузоры</a></li>
+            <li class="vmenu__item last"><span>Решетки настенные однорядные</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Base Content-->
+      <div class="catalog--item__intro">
+        <div class="container">
+          <div class="row">
+            <div class="col sm-5 md-4">
+              <div class="swiper-container gallery-top">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-image"><img src="tmp/shop_item_thumb_1.png" alt=""/></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-image"><img src="tmp/shop_item_thumb_2.png" alt=""/></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-image"><img src="tmp/shop_item_thumb_3.png" alt=""/></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="swiper-slide-image"><img src="tmp/shop_item_thumb_4.png" alt=""/></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container gallery-thumbs">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="tmp/shop_item_thumb_1.png" alt=""/></div>
+                  <div class="swiper-slide"><img src="tmp/shop_item_thumb_2.png" alt=""/></div>
+                  <div class="swiper-slide"><img src="tmp/shop_item_thumb_3.png" alt=""/></div>
+                  <div class="swiper-slide"><img src="tmp/shop_item_thumb_4.png" alt=""/></div>
+                </div>
+                <!-- Add Arrows-->
+                <div class="gallery-next">
+                  <div class="link">
+                    <svg class="icon">
+                      <use xlink:href="#next"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="gallery-prev">
+                  <div class="link">
+                    <svg class="icon">
+                      <use xlink:href="#prev"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col sm-7 md-8 lg-5">
+              <div class="item__cart">
+                <h1 class="item-title">Решетки настенные однорядные</h1>
+                <div class="item-meta">
+                  <div class="item-meta__id"> <span>Артикул: </span><strong>123456</strong></div>
+                  <div class="item-meta__brand"><a href="">Название бренда</a></div>
+                </div>
+                <div class="item-description">Решетка настенная, однорядная 2535-1. Вентиляционная решетка настенного типа, выполненная из качественного металла, и в базовом варианте окрашена белым цветом. </div>
+                <div class="item-skus" data-skus-resize="data-skus-resize">
+                  <div class="item-skus__current"><span class="label">Выберите размер </span><span class="sku-width">Ширина: <strong>350</strong> </span><span class="sku-height">Высота: <strong>350</strong> </span></div>
+                  <div class="sku-width__range"></div>
+                  <div class="sku-height__range"></div>
+                </div>
+                <div class="item-purchase">
+                  <div class="row">
+                    <div class="col xs-6">
+                      <div class="item__price">
+                        <div class="value">1250.00</div>
+                        <div class="value__old">1250.00</div>
+                        <div class="currency">mdl</div>
+                      </div>
+                    </div>
+                    <div class="col xs-6">
+                      <div class="instock text__teal">Есть в наличии</div>
+                      <!--.instock.text__red Нет в наличии-->
+                      <div class="form__quantity">
+                        <label class="form__quantity__minus">
+                          <svg class="icon">
+                            <use xlink:href="#icon-minus"></use>
+                          </svg>
+                        </label>
+                        <input type="number" name="quantity" value="1" min="1" max="10" step="1"/>
+                        <label class="form__quantity__plus">
+                          <svg class="icon">
+                            <use xlink:href="#icon-plus"></use>
+                          </svg>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item__actions">
+                  <button class="btn btn-accent" data-modal="#credit-form">купить в кредит</button>
+                  <button class="btn btn-primary add-to-basket">в корзину</button>
+                </div>
+              </div>
+            </div>
+            <div class="col lg-3">
+              <div class="similar-products">
+                <h4><span>похожие товары</span></h4>
+                <div class="swiper-container similar">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><a class="similar__item" href=""><span class="similar__item__image"><img src="tmp/shop_item_thumb_1.png" alt=""/></span><span class="similar__item__text"><span class="title">Решетки настенные однорядные</span><span class="price">1756 mdl </span></span></a></div>
+                    <div class="swiper-slide"><a class="similar__item" href="">
+                        <div class="similar__item__image"><img src="tmp/shop_item_thumb_2.png" alt=""/></div>
+                        <div class="similar__item__text"><span class="title">Решетки настенные однорядные</span><span class="price">1756 mdl </span></div></a></div>
+                    <div class="swiper-slide"><a class="similar__item" href="">
+                        <div class="similar__item__image"><img src="tmp/shop_item_thumb_3.png" alt=""/></div>
+                        <div class="similar__item__text"><span class="title">Решетки настенные однорядные</span><span class="price">1756 mdl </span></div></a></div>
+                    <div class="swiper-slide"><a class="similar__item" href="">
+                        <div class="similar__item__image"><img src="tmp/shop_item_thumb_4.png" alt=""/></div>
+                        <div class="similar__item__text"><span class="title">Решетки настенные однорядные</span><span class="price">1756 mdl </span></div></a></div>
+                  </div>
+                  <div class="similar__pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="catalog--item__full">
+        <div class="container">
+          <ul class="tab-list" role="tablist">
+            <li class="tab-list__item active" role="presentation"><a class="tab-list__link" href="#description" data-toggle="tab">описание</a></li>
+            <li class="tab-list__item" role="presentation"><a class="tab-list__link" href="#params" data-toggle="tab">характеристики</a></li>
+          </ul>
+          <!-- Tab panes-->
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="description" role="tabpanel">
+              <h3>Назначение</h3>
+              <p>Решетка настенная, однорядная 2535-1. Вентиляционная решетка настенного типа, выполненная из качественного металла, и в базовом варианте окрашена белым цветом. Жалюзи в данной решетке регулируемые и могут менять угол наклона в зависимости от назначения. Решетка PB 2535-1 в исполнении PB 2535-1П, представляет собой вентиляционную решетку однорядную переточную, в которой жалюзи закреплены. </p>
+              <h3>Материал</h3>
+              <p>Решетки 2535-1 изготавливаются из высококачественных алюминиевых профилей и окрашиваются порошковыми красками по каталогу RAL или с анодно-оксидным покрытием, что позволяет использовать в неблагоприятных условиях. </p>
+              <h3>Изготовление</h3>
+              <p>По посадочным размерам L*H с шагом 5мм. При размере L больше 550мм применяется разделительный профиль. Заказать решетки на клапаны дымоудаления возможно у менеджера по телефону (022) 123 456, либо онлайн на Ventbazar.com.ua кликнув нужный размер в таблице с размерами ниже!</p>
+            </div>
+            <div class="tab-pane fade" id="params" role="tabpanel">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>характеристика</th>
+                    <th>значение</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td><span class="text__green">Да</span></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor consectetur adipisicing elit.</td>
+                    <td><span class="text__red">Нет</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__gray">Не указано</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__orange">Важное</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td>Простой текст</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor elit.</td>
+                    <td><a href="">ссылка например бренд</a></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td><span class="text__green">Да</span></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor consectetur adipisicing elit.</td>
+                    <td><span class="text__red">Нет</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__gray">Не указано</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__orange">Важное</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td>Простой текст</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor elit.</td>
+                    <td><a href="">ссылка например бренд</a></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor sit amet.</td>
+                    <td><span class="text__green">Да</span></td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor consectetur adipisicing elit.</td>
+                    <td><span class="text__red">Нет</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__gray">Не указано</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td><span class="text__orange">Важное</span></td>
+                  </tr>
+                  <tr>
+                    <td>Sit amet consectetur adipisicing elit.</td>
+                    <td>Простой текст</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum dolor elit.</td>
+                    <td><a href="">ссылка например бренд</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="credit-form">
+        <h3 class="modal__title">Выберите кредитную линию!</h3>
+        <form class="form mb-30" action="">
+          <div class="row">
+            <div class="col sm-4">
+              <div class="credit__checkbox">
+                <input id="credit_type1" type="radio" name="credit_type" value="1" checked="checked"/>
+                <label for="credit_type1"><span class="value">1135<small>леев в месяц</small></span><span class="start">0<small>леев предоплаты</small></span><span class="period">6 месяцев<small>срок кредита</small></span><span class="input">
+                    <svg class="icon">
+                      <use xlink:href="#icon-credit"></use>
+                    </svg></span></label>
+              </div>
+            </div>
+            <div class="col sm-4">
+              <div class="credit__checkbox">
+                <input id="credit_type2" type="radio" name="credit_type" value="2"/>
+                <label for="credit_type2"><span class="value">641<small>леев в месяц</small></span><span class="start">0<small>леев предоплаты</small></span><span class="period">12 месяцев<small>срок кредита</small></span><span class="input">
+                    <svg class="icon">
+                      <use xlink:href="#icon-credit"></use>
+                    </svg></span></label>
+              </div>
+            </div>
+            <div class="col sm-4">
+              <div class="credit__checkbox">
+                <input id="credit_type3" type="radio" name="credit_type" value="3"/>
+                <label for="credit_type3"><span class="value">395<small>леев в месяц</small></span><span class="start">0<small>леев предоплаты</small></span><span class="period">24 месяца<small>срок кредита</small></span><span class="input">
+                    <svg class="icon">
+                      <use xlink:href="#icon-credit"></use>
+                    </svg></span></label>
+              </div>
+            </div>
+          </div>
+          <p class="text__center">Оставьте нам свои контактные данные или позвоните по телефону <a href="tel:069 777 383">069 777 383</a></p>
+          <div class="row">
+            <div class="col sm-4">
+              <div class="form__input">
+                <input type="text" placeholder="Имя *" required="required" name="credit_name"/>
+              </div>
+            </div>
+            <div class="col sm-4">
+              <div class="form__input">
+                <div class="form__input">
+                  <input type="email" placeholder="e-Mail *" required="required" name="credit_email"/>
+                </div>
+              </div>
+            </div>
+            <div class="col sm-4">
+              <div class="form__input">
+                <button class="btn block btn-accent" type="submit">отправить заявку</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="section home__popular">
+        <div class="container">
+          <h2 class="home__popular__header"><span>популярное</span></h2>
+          <div class="popular swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="grid-list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__price">
+                    <div class="value">1250.00</div>
+                    <div class="currency">mdl</div>
+                  </div>
+                  <div class="item__text">
+                    <div class="item__title"><a href="">Ther products name demo</a></div>
+                    <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  </div>
+                  <div class="item__action">
+                    <button class="btn add-to-basket">в корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid-list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__price action">
+                    <div class="value">1250.00</div>
+                    <div class="value__old">1250.00</div>
+                    <div class="currency">mdl</div>
+                  </div>
+                  <div class="item__text">
+                    <div class="item__title"><a href="">Ther products name demo</a></div>
+                    <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  </div>
+                  <div class="item__action">
+                    <button class="btn add-to-basket">в корзину</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid-list__item out-of-stock"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__price">
+                    <div class="value">125000.00</div>
+                    <div class="currency">mdl</div>
+                  </div>
+                  <div class="item__text">
+                    <div class="item__title"><a href="">Ther products name demo</a></div>
+                    <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  </div>
+                  <div class="item__action">
+                    <button class="btn add-to-basket" disabled="disabled">нет в наличии</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="grid-list__item"><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/><span class="overlay">
+                      <svg class="icon">
+                        <use xlink:href="#icon-readmore"></use>
+                      </svg></span></a>
+                  <div class="item__price">
+                    <div class="value">1250.00</div>
+                    <div class="currency">mdl</div>
+                  </div>
+                  <div class="item__text">
+                    <div class="item__title"><a href="">Ther products name demo</a></div>
+                    <div class="item__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+                  </div>
+                  <div class="item__action">
+                    <button class="btn add-to-basket">в корзину</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Global FOOTER-->
+    <div class="section clients">
+      <div class="container">
+        <h2 class="clients__header"><span>Наши клиенты</span></h2>
+        <div class="clients-slider swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="tmp/logo_brand1-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand2-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand3-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand4-200x95.png" alt=""/></div>
+            <div class="swiper-slide"><img src="tmp/logo_brand5-200x95.png" alt=""/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="trv-footer">
+      <div class="trv-footer__wraper">
+        <div class="container">
+          <div class="row">
+            <div class="col md-2 sm-4">
+              <div class="trv-footer__nav">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">О нас</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Наши объекты</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Сотрудничество</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Акции</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Услуги</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Блог</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Контакты</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col md-3 sm-4">
+              <div class="trv-footer__nav">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Вентиляция</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Кондиционирование</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Отопление</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Монтажные элементы</a></li>
+                </ul>
+                <ul class="fmenu">
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Ваша Корзина</a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="#">Ответы на вопросы</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col md-4 sm-last">
+              <div class="trv-footer__about">
+                <h4>О Компании</h4>
+                <p>«Trivent Com» SRL была основана 29.08.2009 и работает на рынке Республики Молдова в области проектирования, поставки, монтажа и технического обслуживания систем отопления, вентиляции, кондиционирования, отопления и охлаждения.</p><a class="readmore" href="">
+                  <svg class="icon">
+                    <use xlink:href="#next"></use>
+                  </svg><span>Подробнее</span></a>
+              </div>
+            </div>
+            <div class="col md-3 sm-4">
+              <div class="trv-footer__contacts">
+                <ul class="fmenu">
+                  <li class="fmenu__item"><span class="fmenu__text">
+                      <svg class="icon">
+                        <use xlink:href="#icon-address"></use>
+                      </svg><span>2071, РМ Кишинев<br>ул. Alba Iulia 75</span></span></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 69 777 383">
+                      <svg class="icon">
+                        <use xlink:href="#icon-phone"></use>
+                      </svg><span>+373 69 777 383</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 22 854 006">
+                      <svg class="icon">
+                        <use xlink:href="#icon-telephone"></use>
+                      </svg><span>+373 22 854 006</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="tel:+373 22 854 925">
+                      <svg class="icon">
+                        <use xlink:href="#icon-fax"></use>
+                      </svg><span>+373 22 854 925</span></a></li>
+                  <li class="fmenu__item"><a class="fmenu__link" href="mailto:info@trivent.md">
+                      <svg class="icon">
+                        <use xlink:href="#icon-envelope"></use>
+                      </svg><span>info@trivent.md</span></a></li>
+                </ul>
+              </div>
+              <div class="trv-footer__social">
+                <ul class="smenu">
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-facebook"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-twitter"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-linkedin"></use>
+                      </svg></a></li>
+                  <li class="smenu__item"><a class="smenu__link" href="" target="_blank">
+                      <svg class="icon">
+                        <use xlink:href="#icon-vk"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trv-footer__copyright">Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены</div>
+    </footer>
+    <!--CALC MODAL-->
+    <div class="modal" id="calc-form">
+      <h3 class="modal__title">Расчет проекта вентиляции вашего дома</h3>
+      <form class="form" action="">
+        <div class="row">
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Имя *" required="required" name="calc_firstname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Фамилия *" required="required" name="calc_lastname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="tel" placeholder="Телефон *" required="required" name="calc_tel"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="email" placeholder="e-Mail *" required="required" name="calc_email"/>
+            </div>
+          </div>
+        </div>
+        <div class="inputbox">
+          <input class="inputfile" id="calc_files" type="file" name="calc_files" data-multiple-caption="{count} файлов выбрано" multiple=""/>
+          <label for="calc_files"><span></span><strong>
+              <svg class="icon">
+                <use xlink:href="#icon-upload"></use>
+              </svg>Выберите файлы&mldr;</strong></label><small>приложите один или несколько файлов до 10МБ в формате PDF, Word, JPEG</small>
+        </div>
+        <div class="form__input">
+          <textarea cols="30" rows="10" placeholder="Комментарий" name="calc_comment"></textarea>
+        </div>
+        <div class="form__footer center-block">
+          <button class="btn lg btn-accent" type="submit">отправить</button>
+        </div>
+      </form>
+    </div>
+    <!-- Global SCRIPS-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

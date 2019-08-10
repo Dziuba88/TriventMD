@@ -67,7 +67,7 @@ html(lang="en")
                     svg.icon: use(xlink:href="#icon-fax")
                     span +373 22 854 925
                 .trv-header__action
-                  button.btn.btn-accent
+                  button.btn.btn-accent(data-modal="#calc-form")
                     svg.icon: use(xlink:href="#icon-calculator")
                     span Расчет стоимости
                 .trv-header__cart
@@ -81,7 +81,7 @@ html(lang="en")
                 button.show__navbar: svg.icon: use(xlink:href="#icon-bars")
                 .navbar__nav
                   ul.vmenu
-                    li.vmenu__item: a.vmenu__link(href="")
+                    li.vmenu__item(class=title==='Вентиляция'?'current':''): a.vmenu__link(href="")
                       svg.icon: use(xlink:href="#icon-fan")
                       span Вентиляция
                     li.vmenu__item: a.vmenu__link(href="")
@@ -117,7 +117,7 @@ html(lang="en")
                 button.close__navbar: svg.icon: use(xlink:href="#icon-cancel")
             .navbar__mobile__nav
               ul.cat-nav
-                li.cat-nav__item: a.cat-nav__link.active(href="")
+                li.cat-nav__item: a.cat-nav__link(href="", class=title==='Вентиляция'?'current':'')
                   svg.icon: use(xlink:href="#icon-fan")
                   span Вентиляция
                 li.cat-nav__item: a.cat-nav__link(href="")
@@ -137,7 +137,7 @@ html(lang="en")
                 li.hmenu__item: a.hmenu__link(href="#") Услуги
                 li.hmenu__item: a.hmenu__link(href="#") Вакансии
                 li.hmenu__item: a.hmenu__link(href="#") Контакты
-            .navbar__mobile__action
+            .navbar__mobile__action(data-modal="#calc-form")
               button.btn.btn-accent.lg
                 svg.icon: use(xlink:href="#icon-calculator")
                 span Расчет стоимости
@@ -188,8 +188,8 @@ html(lang="en")
             .welcome-next: svg.icon: use(xlink:href="#next")
             .welcome-prev: svg.icon: use(xlink:href="#prev")
       else
-        if title
-          .trv-header__title
+        .trv-header__title
+          if title && description
             .container
               if title
                 h1=title
@@ -264,6 +264,27 @@ html(lang="en")
                 li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-linkedin")
                 li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-vk")
       .trv-footer__copyright Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены
+    //CALC MODAL
+    #calc-form.modal
+      h3.modal__title Расчет проекта вентиляции вашего дома
+      form(action="").form
+        .row
+          .col.sm-6: .form__input: input(type="text", placeholder="Имя *", required, name="calc_firstname")
+          .col.sm-6: .form__input: input(type="text", placeholder="Фамилия *", required, name="calc_lastname")
+          .col.sm-6: .form__input: input(type="tel", placeholder="Телефон *", required, name="calc_tel")
+          .col.sm-6: .form__input: input(type="email", placeholder="e-Mail *", required, name="calc_email")
+        .inputbox
+          input#calc_files.inputfile(type='file' name='calc_files' data-multiple-caption='{count} файлов выбрано' multiple='')
+          label(for='calc_files')
+            span
+            strong
+              svg.icon: use(xlink:href="#icon-upload")
+              | Выберите файлы&mldr;
+          small приложите один или несколько файлов до 10МБ в формате PDF, Word, JPEG
+        .form__input: textarea(cols="30", rows="10", placeholder="Комментарий", name="calc_comment")
+        .form__footer.center-block: button(type="submit").btn.lg.btn-accent отправить
+
+    
     // Global SCRIPS
     script(src="js/jquery-3.4.1.min.js")
     script(src="js/main.min.js")

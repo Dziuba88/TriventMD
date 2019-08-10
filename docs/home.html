@@ -77,7 +77,7 @@
                     <use xlink:href="#icon-fax"></use>
                   </svg><span>+373 22 854 925</span></a></div>
               <div class="trv-header__action">
-                <button class="btn btn-accent">
+                <button class="btn btn-accent" data-modal="#calc-form">
                   <svg class="icon">
                     <use xlink:href="#icon-calculator"></use>
                   </svg><span>Расчет стоимости</span>
@@ -168,7 +168,7 @@
             </div>
             <div class="navbar__mobile__nav">
               <ul class="cat-nav">
-                <li class="cat-nav__item"><a class="cat-nav__link active" href="">
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
                     <svg class="icon">
                       <use xlink:href="#icon-fan"></use>
                     </svg><span>Вентиляция</span></a></li>
@@ -195,7 +195,7 @@
                 <li class="hmenu__item"><a class="hmenu__link" href="#">Контакты</a></li>
               </ul>
             </div>
-            <div class="navbar__mobile__action">
+            <div class="navbar__mobile__action" data-modal="#calc-form">
               <button class="btn btn-accent lg">
                 <svg class="icon">
                   <use xlink:href="#icon-calculator"></use>
@@ -1186,6 +1186,47 @@
       </div>
       <div class="trv-footer__copyright">Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены</div>
     </footer>
+    <!--CALC MODAL-->
+    <div class="modal" id="calc-form">
+      <h3 class="modal__title">Расчет проекта вентиляции вашего дома</h3>
+      <form class="form" action="">
+        <div class="row">
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Имя *" required="required" name="calc_firstname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="text" placeholder="Фамилия *" required="required" name="calc_lastname"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="tel" placeholder="Телефон *" required="required" name="calc_tel"/>
+            </div>
+          </div>
+          <div class="col sm-6">
+            <div class="form__input">
+              <input type="email" placeholder="e-Mail *" required="required" name="calc_email"/>
+            </div>
+          </div>
+        </div>
+        <div class="inputbox">
+          <input class="inputfile" id="calc_files" type="file" name="calc_files" data-multiple-caption="{count} файлов выбрано" multiple=""/>
+          <label for="calc_files"><span></span><strong>
+              <svg class="icon">
+                <use xlink:href="#icon-upload"></use>
+              </svg>Выберите файлы&mldr;</strong></label><small>приложите один или несколько файлов до 10МБ в формате PDF, Word, JPEG</small>
+        </div>
+        <div class="form__input">
+          <textarea cols="30" rows="10" placeholder="Комментарий" name="calc_comment"></textarea>
+        </div>
+        <div class="form__footer center-block">
+          <button class="btn lg btn-accent" type="submit">отправить</button>
+        </div>
+      </form>
+    </div>
     <!-- Global SCRIPS-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/main.min.js"></script>

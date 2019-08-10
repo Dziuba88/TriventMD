@@ -172,17 +172,6 @@
         width: 180px;
       }
     }
-
-    .form__footer {
-      display: flex;
-      align-items: center;
-      &__left {
-        flex: 1;
-        padding-right: 30px;
-        font-size: 12px;
-        line-height: 15px;
-      }
-    }
   }
 
   @include tabletScreenDown {

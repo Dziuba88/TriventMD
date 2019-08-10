@@ -191,6 +191,9 @@ select {
   /* 1 */
   text-transform: none;
 }
+select {
+  display: none;
+}
 
 /**
  * Correct the inability to style clickable types in iOS and Safari.
