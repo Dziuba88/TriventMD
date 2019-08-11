@@ -172,6 +172,17 @@
         width: 180px;
       }
     }
+
+    p.small {
+      font-size: 12px;
+      line-height: 15px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .inputbox {
+      margin-bottom: 0;
+    }
   }
 
   @include tabletScreenDown {

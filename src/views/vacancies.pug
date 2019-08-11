@@ -1,0 +1,149 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Вакансии'
+  - var description = 'Если ты амбициозный, любишь узнавать новое и готов учиться, хочешь работать в хороших условиях<br>и достойно зарабатывать, то наша команда — это то, что тебе нужно!'
+  - var page = 'vacancies'
+block CONTENT
+  // breadcrumbs
+  .breadcrumbs
+    .container
+      ul.vmenu
+        li.vmenu__item.first: a.vmenu__link(href="")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
+          span Главная
+        li.vmenu__item.last: span=title
+  // Base Content
+  .vacancies__positions
+    .container
+      #positions.panel-group(role='tablist' aria-multiselectable='true')
+        .panel
+          .panel__heading(role='tab')
+            a(data-toggle='collapse' data-parent='#positions' href='#positionID-1' aria-expanded='true')
+              span Бухгалтер
+              svg.icon: use(xlink:href="img/sprite.svg#next")
+          #positionID-1.collapse.in(role='tabpanel'): .position
+            .position__left
+              .position__params: ul
+                li Город: <strong>Кишинев</strong>
+                li Образование: <strong>Высшее</strong>
+                li Опыт работы: <strong>От 2-х до 5-и лет</strong>
+                li Зарплата: <strong>По договорённости</strong>
+                li График работы: <strong>Полный рабочий день</strong>
+              .position__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .position__right
+              .position__hr
+                .position__hr__title Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail
+                .position__hr__contacts: ul
+                  li
+                    span Телефон:
+                    a(href="tel:+373 69 777 383") +373 69 777 383
+                  li
+                    span Контактное лицо:
+                    strong Имя Фамилия
+                  li
+                    span E-mail:
+                    a(href="mailto:hr@trivent.md") hr@trivent.md
+        .panel
+          .panel__heading(role='tab')
+            a.collapsed(data-toggle='collapse' data-parent='#positions' href='#positionID-2' aria-expanded='false')
+              span водитель
+              svg.icon: use(xlink:href="img/sprite.svg#next")
+          #positionID-2.collapse(role='tabpanel'): .position
+            .position__left
+              .position__params: ul
+                li Город: <strong>Кишинев</strong>
+                li Образование: <strong>Высшее</strong>
+                li Опыт работы: <strong>От 2-х до 5-и лет</strong>
+                li Зарплата: <strong>По договорённости</strong>
+                li График работы: <strong>Полный рабочий день</strong>
+              .position__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .position__right
+              .position__hr
+                .position__hr__title Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail
+                .position__hr__contacts: ul
+                  li
+                    span Телефон:
+                    a(href="tel:+373 69 777 383") +373 69 777 383
+                  li
+                    span Контактное лицо:
+                    strong Имя Фамилия
+                  li
+                    span E-mail:
+                    a(href="mailto:hr@trivent.md") hr@trivent.md
+        .panel
+          .panel__heading(role='tab')
+            a.collapsed(data-toggle='collapse' data-parent='#positions' href='#positionID-3' aria-expanded='false')
+              span менеджер по продажам
+              svg.icon: use(xlink:href="img/sprite.svg#next")
+          #positionID-3.collapse(role='tabpanel'): .position
+            .position__left
+              .position__params: ul
+                li Город: <strong>Кишинев</strong>
+                li Образование: <strong>Высшее</strong>
+                li Опыт работы: <strong>От 2-х до 5-и лет</strong>
+                li Зарплата: <strong>По договорённости</strong>
+                li График работы: <strong>Полный рабочий день</strong>
+              .position__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .position__right
+              .position__hr
+                .position__hr__title Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail
+                .position__hr__contacts: ul
+                  li
+                    span Телефон:
+                    a(href="tel:+373 69 777 383") +373 69 777 383
+                  li
+                    span Контактное лицо:
+                    strong Имя Фамилия
+                  li
+                    span E-mail:
+                    a(href="mailto:hr@trivent.md") hr@trivent.md
+        .panel
+          .panel__heading(role='tab')
+            a.collapsed(data-toggle='collapse' data-parent='#positions' href='#positionID-4' aria-expanded='false')
+              span монтажник
+              svg.icon: use(xlink:href="img/sprite.svg#next")
+          #positionID-4.collapse(role='tabpanel'): .position
+            .position__left
+              .position__params: ul
+                li Город: <strong>Кишинев</strong>
+                li Образование: <strong>Высшее</strong>
+                li Опыт работы: <strong>От 2-х до 5-и лет</strong>
+                li Зарплата: <strong>По договорённости</strong>
+                li График работы: <strong>Полный рабочий день</strong>
+              .position__text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            .position__right
+              .position__hr
+                .position__hr__title Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail
+                .position__hr__contacts: ul
+                  li
+                    span Телефон:
+                    a(href="tel:+373 69 777 383") +373 69 777 383
+                  li
+                    span Контактное лицо:
+                    strong Имя Фамилия
+                  li
+                    span E-mail:
+                    a(href="mailto:hr@trivent.md") hr@trivent.md
+
+  .section.contacts__form
+    .container
+      h2.contacts__form__header задать вопрос
+      .row
+        .col.md-8.omd-2.lg-6.olg-3
+          form(action="").form
+            .form__input: input(type="text", placeholder="Ваше Имя Фамилия *", required, name="cnt_name")
+            .row
+              .col.sm-6: .form__input: input(type="tel", placeholder="Телефон *", required, name="cnt_tel")
+              .col.sm-6: .form__input: input(type="email", placeholder="e-Mail *", required, name="cnt_email")
+            .form__input: textarea(cols="30", rows="10", placeholder="Текст сообщения *", required, name="cnt_message")
+            p.small приложите один или несколько файлов до 10МБ в формате PDF, Word
+            .form__footer
+              .form__footer__left
+                .inputbox
+                  input#sv_files.inputfile(type='file' name='cnt_files' data-multiple-caption='{count} файлов выбрано' multiple='')
+                  label(for='sv_files')
+                    span
+                    strong
+                      svg.icon: use(xlink:href="img/sprite.svg#icon-upload")
+                      | Выберите файлы&mldr;
+              .form__footer__right: button(type="submit").btn отправить SV

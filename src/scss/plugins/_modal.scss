@@ -1,3 +1,9 @@
+@include tabletScreenUp {
+  html[style='overflow: hidden;'] {
+    padding-right: 17px;
+  }
+}
+
 .blocker {
   position: fixed;
   top: 0;

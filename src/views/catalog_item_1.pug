@@ -8,7 +8,7 @@ block CONTENT
     .container
       ul.vmenu
         li.vmenu__item.first: a.vmenu__link(href="")
-          svg.icon: use(xlink:href="#icon-home")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
           span Главная
         li.vmenu__item.first: a.vmenu__link(href="") Монтажные элементы
         li.vmenu__item.first: a.vmenu__link(href="") Решетки и диффузоры
@@ -31,8 +31,8 @@ block CONTENT
               .swiper-slide: img(src="tmp/shop_item_thumb_3.png", alt="")
               .swiper-slide: img(src="tmp/shop_item_thumb_4.png", alt="")
             // Add Arrows
-            .gallery-next: .link: svg.icon: use(xlink:href="#next")
-            .gallery-prev: .link: svg.icon: use(xlink:href="#prev")
+            .gallery-next: .link: svg.icon: use(xlink:href="img/sprite.svg#next")
+            .gallery-prev: .link: svg.icon: use(xlink:href="img/sprite.svg#prev")
         .col.sm-7.md-8.lg-5
           .item__cart
             h1.item-title Решетки настенные однорядные
@@ -61,9 +61,9 @@ block CONTENT
                   .instock.text__teal Есть в наличии
                   //.instock.text__red Нет в наличии
                   .form__quantity
-                    label.form__quantity__minus: svg.icon: use(xlink:href="#icon-minus")
+                    label.form__quantity__minus: svg.icon: use(xlink:href="img/sprite.svg#icon-minus")
                     input(type="number", name="quantity", value="1", min="1", max="10", step="1")
-                    label.form__quantity__plus: svg.icon: use(xlink:href="#icon-plus")
+                    label.form__quantity__plus: svg.icon: use(xlink:href="img/sprite.svg#icon-plus")
             .item__actions
               button.btn.btn-accent(data-modal="#credit-form") купить в кредит
               button.btn.btn-primary.add-to-basket в корзину
@@ -152,7 +152,7 @@ block CONTENT
               small леев предоплаты
             span.period 6 месяцев
               small срок кредита
-            span.input: svg.icon: use(xlink:href="#icon-credit")
+            span.input: svg.icon: use(xlink:href="img/sprite.svg#icon-credit")
         .col.sm-4: .credit__checkbox
           input#credit_type2(type="radio", name="credit_type", value="2")
           label(for="credit_type2")
@@ -162,7 +162,7 @@ block CONTENT
               small леев предоплаты
             span.period 12 месяцев
               small срок кредита
-            span.input: svg.icon: use(xlink:href="#icon-credit")
+            span.input: svg.icon: use(xlink:href="img/sprite.svg#icon-credit")
         .col.sm-4: .credit__checkbox
           input#credit_type3(type="radio", name="credit_type", value="3")
           label(for="credit_type3")
@@ -172,65 +172,10 @@ block CONTENT
               small леев предоплаты
             span.period 24 месяца
               small срок кредита
-            span.input: svg.icon: use(xlink:href="#icon-credit")
+            span.input: svg.icon: use(xlink:href="img/sprite.svg#icon-credit")
       p.text__center Оставьте нам свои контактные данные или позвоните по телефону <a href="tel:069 777 383">069 777 383</a>
       .row
         .col.sm-4: .form__input: input(type="text", placeholder="Имя *", required, name="credit_name")
         .col.sm-4: .form__input: .form__input: input(type="email", placeholder="e-Mail *", required, name="credit_email")
         .col.sm-4: .form__input: button(type="submit").btn.block.btn-accent отправить заявку
-
-
-  .section.home__popular
-    .container
-      h2.home__popular__header: span популярное
-      .popular.swiper-container
-        .swiper-wrapper
-            .swiper-slide
-              .grid-list__item
-                a(href="").item__image
-                  img(src="tmp/shop_item_thumb_1.png", alt="")
-                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
-                .item__price
-                  .value 1250.00
-                  .currency mdl
-                .item__text
-                  .item__title: a(href="") Ther products name demo
-                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                .item__action: button.btn.add-to-basket в корзину
-            .swiper-slide
-              .grid-list__item
-                a(href="").item__image
-                  img(src="tmp/shop_item_thumb_1.png", alt="")
-                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
-                .item__price.action
-                  .value 1250.00
-                  .value__old 1250.00
-                  .currency mdl
-                .item__text
-                  .item__title: a(href="") Ther products name demo
-                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                .item__action: button.btn.add-to-basket в корзину
-            .swiper-slide
-              .grid-list__item.out-of-stock
-                a(href="").item__image
-                  img(src="tmp/shop_item_thumb_1.png", alt="")
-                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
-                .item__price
-                  .value 125000.00
-                  .currency mdl
-                .item__text
-                  .item__title: a(href="") Ther products name demo
-                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                .item__action: button.btn.add-to-basket(disabled) нет в наличии
-            .swiper-slide
-              .grid-list__item
-                a(href="").item__image
-                  img(src="tmp/shop_item_thumb_1.png", alt="")
-                  span.overlay: svg.icon: use(xlink:href="#icon-readmore")
-                .item__price
-                  .value 1250.00
-                  .currency mdl
-                .item__text
-                  .item__title: a(href="") Ther products name demo
-                  .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                .item__action: button.btn.add-to-basket в корзину
+  include components/home__popular

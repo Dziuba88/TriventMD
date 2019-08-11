@@ -94,6 +94,7 @@ p {
   th,
   td {
     padding: 5px 10px;
+    vertical-align: middle;
   }
 
   thead,
@@ -443,6 +444,13 @@ strong {
 .selectric-items {
   max-height: 200px;
 }
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form {
   &__input {
     padding-bottom: 15px;
@@ -651,12 +659,6 @@ strong {
       &:-moz-placeholder {
         color: $light;
       }
-    }
-
-    input[type='number']::-webkit-inner-spin-button,
-    input[type='number']::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
     }
 
     &__minus,

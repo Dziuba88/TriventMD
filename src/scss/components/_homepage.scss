@@ -522,6 +522,7 @@
     margin-bottom: 30px;
     color: $white;
     text-decoration: none;
+    font-weight: 400;
 
     img,
     span {
@@ -548,6 +549,10 @@
         object-fit: cover;
         transition: 1s ease-in-out;
       }
+    }
+
+    &:hover {
+      color: $white;
     }
 
     &:hover img {

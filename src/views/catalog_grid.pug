@@ -9,7 +9,7 @@ block CONTENT
     .container
       ul.vmenu
         li.vmenu__item.first: a.vmenu__link(href="")
-          svg.icon: use(xlink:href="#icon-home")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
           span Главная
         li.vmenu__item.last: span=title
   // Base Content
@@ -24,8 +24,8 @@ block CONTENT
             .catalog__list__sort
               .sort-left
                 ul.view-layout
-                  li: a(href="").current: svg.icon: use(xlink:href="#icon-grid")
-                  li: a(href=""): svg.icon: use(xlink:href="#icon-list")
+                  li: a(href="").current: svg.icon: use(xlink:href="img/sprite.svg#icon-grid")
+                  li: a(href=""): svg.icon: use(xlink:href="img/sprite.svg#icon-list")
               .sort-right
                 select#sort(name="sort" style="width:160px")
                   option(value="newlest") Вначале новые
@@ -38,7 +38,7 @@ block CONTENT
                   .grid-list__item
                     a(href="").item__image
                       img(src="tmp/shop_item_thumb_1.png", alt="")
-                      span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                      span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
                     .item__price
                       .value 1250.00
                       .currency mdl
@@ -50,7 +50,7 @@ block CONTENT
                   .grid-list__item
                     a(href="").item__image
                       img(src="tmp/shop_item_thumb_1.png", alt="")
-                      span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                      span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
                     .item__price.action
                       .value 1250.00
                       .value__old 1250.00
@@ -63,7 +63,7 @@ block CONTENT
                   .grid-list__item
                     a(href="").item__image
                       img(src="tmp/shop_item_noimage.png", alt="")
-                      span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                      span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
                     .item__price
                       .value 1250.00
                       .currency mdl
@@ -75,7 +75,7 @@ block CONTENT
                   .grid-list__item.out-of-stock
                     a(href="").item__image
                       img(src="tmp/shop_item_thumb_1.png", alt="")
-                      span.overlay: svg.icon: use(xlink:href="#icon-readmore")
+                      span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
                     .item__price
                       .value 125000.00
                       .currency mdl
@@ -87,10 +87,10 @@ block CONTENT
             .pagination__total всего <strong>1235</strong> товаров
             .pagination__nav
               ul
-                li: a(href=""): svg.icon: use(xlink:href="#first")
-                li: a(href=""): svg.icon: use(xlink:href="#prev")
+                li: a(href=""): svg.icon: use(xlink:href="img/sprite.svg#first")
+                li: a(href=""): svg.icon: use(xlink:href="img/sprite.svg#prev")
                 li: a(href="") 5
                 li.current: span 6
                 li: a(href="") 7
-                li: a(href=""): svg.icon: use(xlink:href="#next")
-                li.disabled: span: svg.icon: use(xlink:href="#last")
+                li: a(href=""): svg.icon: use(xlink:href="img/sprite.svg#next")
+                li.disabled: span: svg.icon: use(xlink:href="img/sprite.svg#last")

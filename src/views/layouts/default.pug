@@ -40,7 +40,7 @@ html(lang="en")
               .dropdown
                 span.dropdown__toggle(data-toggle="dropdown") 
                   span Ru
-                  svg.dropdown__caret: use(xlink:href="#caret")
+                  svg.dropdown__caret: use(xlink:href="img/sprite.svg#caret")
                 .dropdown__menu
                   ul.hmenu
                     li.hmenu__item.current: a.hmenu__link(href="#") Ru
@@ -50,55 +50,55 @@ html(lang="en")
             .container
               .trv-header__bottom__wraper
                 .trv-header__brand
-                  a(href=""): svg.logo: use(xlink:href="#TriventLogoWhite")
+                  a(href=""): svg.logo: use(xlink:href="img/sprite.svg#TriventLogoWhite")
                 .trv-header__separator
                 .trv-header__contacts
                   a.big-phone(href="tel:+373 69 777 383")
-                    svg.icon: use(xlink:href="#icon-phone")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-phone")
                     span +373 69 777 383
                   a(href="mailto:info@trivent.md")
-                    svg.icon: use(xlink:href="#icon-envelope")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-envelope")
                     span info@trivent.md
                 .trv-header__contacts
                   a(href="tel:+373 22 854 006")
-                    svg.icon: use(xlink:href="#icon-telephone")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-telephone")
                     span +373 22 854 006
                   a(href="tel:+373 22 854 925")
-                    svg.icon: use(xlink:href="#icon-fax")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-fax")
                     span +373 22 854 925
                 .trv-header__action
                   button.btn.btn-accent(data-modal="#calc-form")
-                    svg.icon: use(xlink:href="#icon-calculator")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-calculator")
                     span Расчет стоимости
                 .trv-header__cart
                   a.cart-button(href="")
-                    svg.icon: use(xlink:href="#icon-cart")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-cart")
                     span.counter 25
         .navbar
           .container
             .navbar__wraper
               .navbar__left
-                button.show__navbar: svg.icon: use(xlink:href="#icon-bars")
+                button.show__navbar: svg.icon: use(xlink:href="img/sprite.svg#icon-bars")
                 .navbar__nav
                   ul.vmenu
                     li.vmenu__item(class=title==='Вентиляция'?'current':''): a.vmenu__link(href="")
-                      svg.icon: use(xlink:href="#icon-fan")
+                      svg.icon: use(xlink:href="img/sprite.svg#icon-fan")
                       span Вентиляция
                     li.vmenu__item: a.vmenu__link(href="")
-                      svg.icon: use(xlink:href="#icon-cold")
+                      svg.icon: use(xlink:href="img/sprite.svg#icon-cold")
                       span Кондиционеры
                     li.vmenu__item: a.vmenu__link(href="")
-                      svg.icon: use(xlink:href="#icon-warm")
+                      svg.icon: use(xlink:href="img/sprite.svg#icon-warm")
                       span Отопление
                     li.vmenu__item: a.vmenu__link(href="")
-                      svg.icon: use(xlink:href="#icon-sett")
+                      svg.icon: use(xlink:href="img/sprite.svg#icon-sett")
                       span Монтажные элементы
                 form.product__search(method='get' action='')
-                  label.icon(for='header-search'): svg.icon: use(xlink:href="#icon-search")
+                  label.icon(for='header-search'): svg.icon: use(xlink:href="img/sprite.svg#icon-search")
                   input#header-search(autocomplete='off' type='search' name='query' placeholder='Поиск по каталогу')
                   button.btn.xs.btn-teal(type='submit') Найти
               .navbar__right
-                button.navbar__search-toogle: svg.icon: use(xlink:href="#icon-search")
+                button.navbar__search-toogle: svg.icon: use(xlink:href="img/sprite.svg#icon-search")
         .navbar__mobile
           .container
             .navbar__mobile__header
@@ -107,27 +107,27 @@ html(lang="en")
                   .dropdown
                     span.dropdown__toggle(data-toggle="dropdown") 
                       span Ru
-                      svg.dropdown__caret: use(xlink:href="#caret")
+                      svg.dropdown__caret: use(xlink:href="img/sprite.svg#caret")
                     .dropdown__menu
                       ul.hmenu
                         li.hmenu__item.current: a.hmenu__link(href="#") Ru
                         li.hmenu__item: a.hmenu__link(href="#") Md
                         li.hmenu__item: a.hmenu__link(href="#") En
               .header-right
-                button.close__navbar: svg.icon: use(xlink:href="#icon-cancel")
+                button.close__navbar: svg.icon: use(xlink:href="img/sprite.svg#icon-cancel")
             .navbar__mobile__nav
               ul.cat-nav
                 li.cat-nav__item: a.cat-nav__link(href="", class=title==='Вентиляция'?'current':'')
-                  svg.icon: use(xlink:href="#icon-fan")
+                  svg.icon: use(xlink:href="img/sprite.svg#icon-fan")
                   span Вентиляция
                 li.cat-nav__item: a.cat-nav__link(href="")
-                  svg.icon: use(xlink:href="#icon-cold")
+                  svg.icon: use(xlink:href="img/sprite.svg#icon-cold")
                   span Кондиционеры
                 li.cat-nav__item: a.cat-nav__link(href="")
-                  svg.icon: use(xlink:href="#icon-warm")
+                  svg.icon: use(xlink:href="img/sprite.svg#icon-warm")
                   span Отопление
                 li.cat-nav__item: a.cat-nav__link(href="")
-                  svg.icon: use(xlink:href="#icon-sett")
+                  svg.icon: use(xlink:href="img/sprite.svg#icon-sett")
                   span Монтажные элементы
               ul.hmenu
                 li.hmenu__item: a.hmenu__link.active(href="#") О нас
@@ -137,22 +137,22 @@ html(lang="en")
                 li.hmenu__item: a.hmenu__link(href="#") Услуги
                 li.hmenu__item: a.hmenu__link(href="#") Вакансии
                 li.hmenu__item: a.hmenu__link(href="#") Контакты
-            .navbar__mobile__action(data-modal="#calc-form")
-              button.btn.btn-accent.lg
-                svg.icon: use(xlink:href="#icon-calculator")
+            .navbar__mobile__action
+              button.btn.btn-accent.lg(data-modal="#calc-form")
+                svg.icon: use(xlink:href="img/sprite.svg#icon-calculator")
                 span Расчет стоимости
             .navbar__mobile__contacts
               a(href="tel:+373 69 777 383")
-                svg.icon: use(xlink:href="#icon-phone")
+                svg.icon: use(xlink:href="img/sprite.svg#icon-phone")
                 span +373 69 777 383
               a(href="tel:+373 22 854 006")
-                svg.icon: use(xlink:href="#icon-telephone")
+                svg.icon: use(xlink:href="img/sprite.svg#icon-telephone")
                 span +373 22 854 006
               a(href="tel:+373 22 854 925")
-                svg.icon: use(xlink:href="#icon-fax")
+                svg.icon: use(xlink:href="img/sprite.svg#icon-fax")
                 span +373 22 854 925
               a(href="mailto:info@trivent.md")
-                svg.icon: use(xlink:href="#icon-envelope")
+                svg.icon: use(xlink:href="img/sprite.svg#icon-envelope")
                 span info@trivent.md
 
       if headerSlider
@@ -185,8 +185,8 @@ html(lang="en")
                     .swiper-slide__text: p Стильная надёжная и энергоэффективная сплит-система I Green PRO, позволяет управлять потоками воздуха прямо с пульта, регулируя его в четырех направлениях. Одновременно благодаря генератору Cold Plasma, прибор эффективно очищает и ионизирует воздух, делая его чище и полезнее.
                     .swiper-slide__link: a.btn.lg.btn-white-o(href="#") Купить сейчас
             // Add Arrows
-            .welcome-next: svg.icon: use(xlink:href="#next")
-            .welcome-prev: svg.icon: use(xlink:href="#prev")
+            .welcome-next: svg.icon: use(xlink:href="img/sprite.svg#next")
+            .welcome-prev: svg.icon: use(xlink:href="img/sprite.svg#prev")
       else
         .trv-header__title
           if title && description
@@ -237,32 +237,32 @@ html(lang="en")
               h4 О Компании
               p «Trivent Com» SRL была основана 29.08.2009 и работает на рынке Республики Молдова в области проектирования, поставки, монтажа и технического обслуживания систем отопления, вентиляции, кондиционирования, отопления и охлаждения.
               a.readmore(href="")
-                svg.icon: use(xlink:href="#next")
+                svg.icon: use(xlink:href="img/sprite.svg#next")
                 span Подробнее
           .col.md-3.sm-4
             .trv-footer__contacts
               ul.fmenu
                 li.fmenu__item: span.fmenu__text
-                  svg.icon: use(xlink:href="#icon-address")
+                  svg.icon: use(xlink:href="img/sprite.svg#icon-address")
                   span 2071, РМ Кишинев<br>ул. Alba Iulia 75
                 li.fmenu__item: a.fmenu__link(href="tel:+373 69 777 383")
-                    svg.icon: use(xlink:href="#icon-phone")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-phone")
                     span +373 69 777 383
                 li.fmenu__item: a.fmenu__link(href="tel:+373 22 854 006")
-                    svg.icon: use(xlink:href="#icon-telephone")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-telephone")
                     span +373 22 854 006
                 li.fmenu__item: a.fmenu__link(href="tel:+373 22 854 925")
-                    svg.icon: use(xlink:href="#icon-fax")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-fax")
                     span +373 22 854 925
                 li.fmenu__item: a.fmenu__link(href="mailto:info@trivent.md")
-                    svg.icon: use(xlink:href="#icon-envelope")
+                    svg.icon: use(xlink:href="img/sprite.svg#icon-envelope")
                     span info@trivent.md
             .trv-footer__social
               ul.smenu
-                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-facebook")
-                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-twitter")
-                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-linkedin")
-                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="#icon-vk")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="img/sprite.svg#icon-facebook")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="img/sprite.svg#icon-twitter")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="img/sprite.svg#icon-linkedin")
+                li.smenu__item: a.smenu__link(href="", target="_blank"): svg.icon: use(xlink:href="img/sprite.svg#icon-vk")
       .trv-footer__copyright Copyright © 2019 <a href="">«Trivent Com» SRL</a>. Все права Защищены
     //CALC MODAL
     #calc-form.modal
@@ -278,7 +278,7 @@ html(lang="en")
           label(for='calc_files')
             span
             strong
-              svg.icon: use(xlink:href="#icon-upload")
+              svg.icon: use(xlink:href="img/sprite.svg#icon-upload")
               | Выберите файлы&mldr;
           small приложите один или несколько файлов до 10МБ в формате PDF, Word, JPEG
         .form__input: textarea(cols="30", rows="10", placeholder="Комментарий", name="calc_comment")

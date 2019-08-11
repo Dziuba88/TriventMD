@@ -1,0 +1,54 @@
+.section.home__popular
+  .container
+    h2.home__popular__header: span популярное
+    .popular.swiper-container
+      .swiper-wrapper
+          .swiper-slide
+            .grid-list__item
+              a(href="").item__image
+                img(src="tmp/shop_item_thumb_1.png", alt="")
+                span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
+              .item__price
+                .value 1250.00
+                .currency mdl
+              .item__text
+                .item__title: a(href="") Ther products name demo
+                .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              .item__action: button.btn.add-to-basket в корзину
+          .swiper-slide
+            .grid-list__item
+              a(href="").item__image
+                img(src="tmp/shop_item_thumb_1.png", alt="")
+                span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
+              .item__price.action
+                .value 1250.00
+                .value__old 1250.00
+                .currency mdl
+              .item__text
+                .item__title: a(href="") Ther products name demo
+                .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              .item__action: button.btn.add-to-basket в корзину
+          .swiper-slide
+            .grid-list__item.out-of-stock
+              a(href="").item__image
+                img(src="tmp/shop_item_thumb_1.png", alt="")
+                span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
+              .item__price
+                .value 125000.00
+                .currency mdl
+              .item__text
+                .item__title: a(href="") Ther products name demo
+                .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              .item__action: button.btn.add-to-basket(disabled) нет в наличии
+          .swiper-slide
+            .grid-list__item
+              a(href="").item__image
+                img(src="tmp/shop_item_thumb_1.png", alt="")
+                span.overlay: svg.icon: use(xlink:href="img/sprite.svg#icon-readmore")
+              .item__price
+                .value 1250.00
+                .currency mdl
+              .item__text
+                .item__title: a(href="") Ther products name demo
+                .item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              .item__action: button.btn.add-to-basket в корзину

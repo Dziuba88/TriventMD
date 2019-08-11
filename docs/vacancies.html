@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>TRIVENT :: Контакты</title>
+    <title>TRIVENT :: Вакансии</title>
     <!-- FAVICON & THEME-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;display=swap&amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/styles.min.css"/>
   </head>
-  <body class="trv contacts">
+  <body class="trv vacancies">
     <!-- Global HEADER-->
     <header class="trv-header">
       <div class="trv-header__wraper">
@@ -220,8 +220,8 @@
       </div>
       <div class="trv-header__title">
         <div class="container">
-          <h1>Контакты</h1>
-          <p>Trivent Com заботится о своих клиентах, поэтому мы рады любым отзывам пользователей.<br>Здесь вы можете найти контактные данные нашей компании.</p>
+          <h1>Вакансии</h1>
+          <p>Если ты амбициозный, любишь узнавать новое и готов учиться, хочешь работать в хороших условиях<br>и достойно зарабатывать, то наша команда — это то, что тебе нужно!</p>
         </div>
       </div>
     </header>
@@ -235,177 +235,152 @@
                 <svg class="icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg><span>Главная</span></a></li>
-            <li class="vmenu__item last"><span>Контакты</span></li>
+            <li class="vmenu__item last"><span>Вакансии</span></li>
           </ul>
         </div>
       </div>
-      <!-- Base Contacts-->
-      <div class="section contacts__info">
+      <!-- Base Content-->
+      <div class="vacancies__positions">
         <div class="container">
-          <div class="row">
-            <div class="col md-4">
-              <div class="contacts__info__header"><img src="tmp/logo.svg" alt=""/><a class="big-phone" href="tel:+373 69 777 383">
+          <div class="panel-group" id="positions" role="tablist" aria-multiselectable="true">
+            <div class="panel">
+              <div class="panel__heading" role="tab"><a data-toggle="collapse" data-parent="#positions" href="#positionID-1" aria-expanded="true"><span>Бухгалтер</span>
                   <svg class="icon">
-                    <use xlink:href="img/sprite.svg#icon-phone"></use>
-                  </svg><span>+373 69 777 383</span></a><br/><a href="mailto:info@trivent.md">
-                  <svg class="icon">
-                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
-                  </svg><span>info@trivent.md</span></a></div>
-            </div>
-            <div class="col md-4 sm-6">
-              <div class="contacts__info__main">
-                <h3>контактная информация</h3>
-                <ul>
-                  <li><span class="contact">
-                      <svg class="icon">
-                        <use xlink:href="img/sprite.svg#icon-home"></use>
-                      </svg><span>Склад / Офис: мун. Кишинэу,<br>бул. Алба Юлия 75N, МД-2071</span></span></li>
-                  <li><span class="contact">
-                      <svg class="icon">
-                        <use xlink:href="img/sprite.svg#icon-stock"></use>
-                      </svg><span>Магазин: Construct DEPO,<br>ул. Кодрилор 16, оф. 75</span></span></li>
-                  <li><a class="contact" href="tel:+373 22 854 006">
-                      <svg class="icon">
-                        <use xlink:href="img/sprite.svg#icon-telephone"></use>
-                      </svg><span>+373 22 854 006</span></a></li>
-                  <li><a class="contact" href="tel:+373 69 777 383">
-                      <svg class="icon">
-                        <use xlink:href="img/sprite.svg#icon-phone"></use>
-                      </svg><span>+373 69 777 383</span></a></li>
-                  <li><a class="contact" href="tel:+373 22 854 925">
-                      <svg class="icon">
-                        <use xlink:href="img/sprite.svg#icon-fax"></use>
-                      </svg><span>+373 22 854 925</span></a></li>
-                </ul>
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg></a></div>
+              <div class="collapse in" id="positionID-1" role="tabpanel">
+                <div class="position">
+                  <div class="position__left">
+                    <div class="position__params">
+                      <ul>
+                        <li>Город: <strong>Кишинев</strong></li>
+                        <li>Образование: <strong>Высшее</strong></li>
+                        <li>Опыт работы: <strong>От 2-х до 5-и лет</strong></li>
+                        <li>Зарплата: <strong>По договорённости</strong></li>
+                        <li>График работы: <strong>Полный рабочий день</strong></li>
+                      </ul>
+                    </div>
+                    <div class="position__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                  <div class="position__right">
+                    <div class="position__hr">
+                      <div class="position__hr__title">Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail</div>
+                      <div class="position__hr__contacts">
+                        <ul>
+                          <li><span>Телефон:</span><a href="tel:+373 69 777 383">+373 69 777 383</a></li>
+                          <li><span>Контактное лицо:</span><strong>Имя Фамилия</strong></li>
+                          <li><span>E-mail:</span><a href="mailto:hr@trivent.md">hr@trivent.md</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col md-4 sm-6">
-              <div class="contacts__info__contabil">
-                <h3>БАНКОВСКИЕ реквизиты</h3>
-                <ul>
-                  <li><a href="">«Trivent com» SRL</a></li>
-                  <li>г. Крикова ул. Кручец 3</li>
-                  <li>IDNO 1014600029124 </li>
-                  <li>TVA 0608650</li>
-                  <li>BC Moldova Agroindbank SA фил. М. Костин</li>
-                  <li>AGRNMD2X710</li>
-                  <li>IBAN MD12AG000000022512366810 (MDL)</li>
-                </ul>
+            <div class="panel">
+              <div class="panel__heading" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#positions" href="#positionID-2" aria-expanded="false"><span>водитель</span>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg></a></div>
+              <div class="collapse" id="positionID-2" role="tabpanel">
+                <div class="position">
+                  <div class="position__left">
+                    <div class="position__params">
+                      <ul>
+                        <li>Город: <strong>Кишинев</strong></li>
+                        <li>Образование: <strong>Высшее</strong></li>
+                        <li>Опыт работы: <strong>От 2-х до 5-и лет</strong></li>
+                        <li>Зарплата: <strong>По договорённости</strong></li>
+                        <li>График работы: <strong>Полный рабочий день</strong></li>
+                      </ul>
+                    </div>
+                    <div class="position__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                  <div class="position__right">
+                    <div class="position__hr">
+                      <div class="position__hr__title">Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail</div>
+                      <div class="position__hr__contacts">
+                        <ul>
+                          <li><span>Телефон:</span><a href="tel:+373 69 777 383">+373 69 777 383</a></li>
+                          <li><span>Контактное лицо:</span><strong>Имя Фамилия</strong></li>
+                          <li><span>E-mail:</span><a href="mailto:hr@trivent.md">hr@trivent.md</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel__heading" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#positions" href="#positionID-3" aria-expanded="false"><span>менеджер по продажам</span>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg></a></div>
+              <div class="collapse" id="positionID-3" role="tabpanel">
+                <div class="position">
+                  <div class="position__left">
+                    <div class="position__params">
+                      <ul>
+                        <li>Город: <strong>Кишинев</strong></li>
+                        <li>Образование: <strong>Высшее</strong></li>
+                        <li>Опыт работы: <strong>От 2-х до 5-и лет</strong></li>
+                        <li>Зарплата: <strong>По договорённости</strong></li>
+                        <li>График работы: <strong>Полный рабочий день</strong></li>
+                      </ul>
+                    </div>
+                    <div class="position__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                  <div class="position__right">
+                    <div class="position__hr">
+                      <div class="position__hr__title">Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail</div>
+                      <div class="position__hr__contacts">
+                        <ul>
+                          <li><span>Телефон:</span><a href="tel:+373 69 777 383">+373 69 777 383</a></li>
+                          <li><span>Контактное лицо:</span><strong>Имя Фамилия</strong></li>
+                          <li><span>E-mail:</span><a href="mailto:hr@trivent.md">hr@trivent.md</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel">
+              <div class="panel__heading" role="tab"><a class="collapsed" data-toggle="collapse" data-parent="#positions" href="#positionID-4" aria-expanded="false"><span>монтажник</span>
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#next"></use>
+                  </svg></a></div>
+              <div class="collapse" id="positionID-4" role="tabpanel">
+                <div class="position">
+                  <div class="position__left">
+                    <div class="position__params">
+                      <ul>
+                        <li>Город: <strong>Кишинев</strong></li>
+                        <li>Образование: <strong>Высшее</strong></li>
+                        <li>Опыт работы: <strong>От 2-х до 5-и лет</strong></li>
+                        <li>Зарплата: <strong>По договорённости</strong></li>
+                        <li>График работы: <strong>Полный рабочий день</strong></li>
+                      </ul>
+                    </div>
+                    <div class="position__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                  </div>
+                  <div class="position__right">
+                    <div class="position__hr">
+                      <div class="position__hr__title">Свяжитесь с менеджером<br>или отправте SV на указанный е-Mail</div>
+                      <div class="position__hr__contacts">
+                        <ul>
+                          <li><span>Телефон:</span><a href="tel:+373 69 777 383">+373 69 777 383</a></li>
+                          <li><span>Контактное лицо:</span><strong>Имя Фамилия</strong></li>
+                          <li><span>E-mail:</span><a href="mailto:hr@trivent.md">hr@trivent.md</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="section contacts__map">
-        <div id="gmap"></div>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLa52E3EJeehDidU_gDBx4B4NMzh01hiY&amp;language=ru&amp;amp;amp;amp;amp;sensor=false"></script>
-        <script>
-          var map_styler = [
-            {
-              "featureType": "administrative",
-              "elementType": "geometry",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "administrative.land_parcel",
-              "elementType": "labels",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "poi",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "poi",
-              "elementType": "labels.text",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "road",
-              "elementType": "labels.icon",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "road.local",
-              "elementType": "labels",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            },
-            {
-              "featureType": "transit",
-              "stylers": [
-                {
-                  "visibility": "off"
-                }
-              ]
-            }
-          ];
-          var latLng = new google.maps.LatLng(47.037, 28.765);
-          var locations = [
-            [
-              '<div id="content"><h3 id="firstHeading" class="firstHeading">«Trivent com» SRL</h3><div id="bodyContent"><p>Склад / Офис: мун. Кишинэу,<br>бул. Алба Юлия 75N, МД-2071</p></div></div>', 
-              47.0367608,28.7700402, 
-              "img/office_marker.png"
-            ],
-            [
-              '<div id="content"><h3 id="firstHeading" class="firstHeading">«Trivent com» SRL</h3><div id="bodyContent"><p>Магазин: Construct DEPO,<br>ул. Кодрилор 16, оф. 75</p></div></div>', 
-              47.0380324,28.7587175, 
-              "img/stock_marker.png"
-            ]
-          ];
-          var map = new google.maps.Map(document.getElementById('gmap'), {
-              zoom: 14,
-              styles: map_styler,
-              center: latLng,
-              mapTypeId: google.maps.MapTypeId.ROADMAP,
-              disableDefaultUI: true
-          });
-          var infowindow = new google.maps.InfoWindow();
-          var marker, i;
-          for (i = 0; i < locations.length; i++) {
-              marker = new google.maps.Marker({
-                  position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-                  map: map,
-                  icon: {
-                      url: locations[i][3],
-                      scaledSize: new google.maps.Size(40, 48)
-                  }
-              });
-              google.maps.event.addListener(marker, 'click', (function(marker, i) {
-                  return function() {
-                      infowindow.setContent(locations[i][0]);
-                      infowindow.open(map, marker);
-                  }
-              })(marker, i));
-          };
-          window.addEventListener("resize", function () {
-            window.setTimeout(function () { map.panTo(latLng) }, 250);
-          });
-          
-        </script>
       </div>
       <div class="section contacts__form">
         <div class="container">
@@ -418,23 +393,32 @@
                 </div>
                 <div class="row">
                   <div class="col sm-6">
-                    <div class="form__input error">
+                    <div class="form__input">
                       <input type="tel" placeholder="Телефон *" required="required" name="cnt_tel"/>
                     </div>
                   </div>
                   <div class="col sm-6">
-                    <div class="form__input success">
-                      <input type="email" placeholder="e-Mail *" required="required" name="cnt_email" value="test@test.com"/>
+                    <div class="form__input">
+                      <input type="email" placeholder="e-Mail *" required="required" name="cnt_email"/>
                     </div>
                   </div>
                 </div>
                 <div class="form__input">
                   <textarea cols="30" rows="10" placeholder="Текст сообщения *" required="required" name="cnt_message"></textarea>
                 </div>
+                <p class="small">приложите один или несколько файлов до 10МБ в формате PDF, Word</p>
                 <div class="form__footer">
-                  <div class="form__footer__left">Ваш электронный адрес не будет опубликован.<br>Обязательные поля помечены *</div>
+                  <div class="form__footer__left">
+                    <div class="inputbox">
+                      <input class="inputfile" id="sv_files" type="file" name="cnt_files" data-multiple-caption="{count} файлов выбрано" multiple=""/>
+                      <label for="sv_files"><span></span><strong>
+                          <svg class="icon">
+                            <use xlink:href="img/sprite.svg#icon-upload"></use>
+                          </svg>Выберите файлы&mldr;</strong></label>
+                    </div>
+                  </div>
                   <div class="form__footer__right">
-                    <button class="btn" type="submit">отправить</button>
+                    <button class="btn" type="submit">отправить SV</button>
                   </div>
                 </div>
               </form>
