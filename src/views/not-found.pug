@@ -1,0 +1,21 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Ошибка 404 - Страница не найдена'
+  - var page = 'not-found'
+block CONTENT
+  // breadcrumbs
+  .breadcrumbs
+    .container
+      ul.vmenu
+        li.vmenu__item.first: a.vmenu__link(href="")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
+          span Главная
+        li.vmenu__item.last: span=title
+  // Base Content
+  .page-404
+    .container
+      .row
+        .col.md-10.omd-1.lg-8.olg-2
+          img(src="img/not_found.png", alt="")
+          h1 <span class="text__red">Ошибка!</span> Страница не нейдена!
+          a(href="").btn.lg вернуться на главную

@@ -12,7 +12,7 @@
   color: $dark;
   font-size: 12px;
   line-height: 1.5;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   text-align: center;
   white-space: nowrap;
@@ -132,6 +132,23 @@
       background-color: rgba($white, 0.25);
       color: $white;
       border-color: $white;
+    }
+  }
+  &-red {
+    border-color: $red;
+    color: $red;
+
+    &:hover {
+      box-shadow: none;
+      background-color: $red;
+      color: $white;
+      border-color: $red;
+    }
+    &:active {
+      box-shadow: none;
+      background-color: $pink;
+      color: $white;
+      border-color: $pink;
     }
   }
   &-teal {

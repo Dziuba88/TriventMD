@@ -1,0 +1,62 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Корзина'
+  - var description = 'Вы можете отредактиравать товары добавленные в корзину.<br>Можно изменять колличество товара или удалить его из корзины.'
+  - var page = 'shopping-cart'
+block CONTENT
+  // breadcrumbs
+  .breadcrumbs
+    .container
+      ul.vmenu
+        li.vmenu__item.first: a.vmenu__link(href="")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
+          span Главная
+        li.vmenu__item.last: span=title
+  // Base Content
+  .shopping-cart__items
+    .container
+      table.table.table__cart
+        thead: tr
+          th(colspan="2") Наименование
+          th цена
+          th колличество
+          th сумма
+          th &nbsp;
+        tbody
+          -for(i=1;i<=3;i++)
+            tr
+              td
+                a(href="").item__image: img(src="tmp/shop_item_thumb_1.png", alt="")
+              td
+                a(href="").item__title Решетки настенные однорядные
+                span.item__meta 
+                  span.item__id Артикул: <strong>123456</strong>
+                  span.item__category Категория: <strong>Решетки и диффузоры<strong>
+                  span.item__brand Бренд: <strong>Название бренда<strong>
+              td: span.item__price 125 mdl
+              td: span.form__quantity
+                label.form__quantity__minus: svg.icon: use(xlink:href="img/sprite.svg#icon-minus")
+                input(type="number", name="quantity", value="3", min="1", max="10", step="1")
+                label.form__quantity__plus: svg.icon: use(xlink:href="img/sprite.svg#icon-plus")
+              td: span.item__total 1250 mdl
+              td: button.delete: svg.icon: use(xlink:href="img/sprite.svg#icon-delete")
+        tfoot
+          tr
+            td(colspan="3", rowspan="3")
+              .form.cupon__form
+                h4 Скидочный купон
+                .form__input: input(type="text", placeholder="Введите промокод *", required, name="cupon")
+                button(type="submit").btn применить
+            td.summary__label сумма заказа
+            td.summary__value(colspan="2"): span 3750 MDL
+          tr
+            td.summary__label сумма доставки
+            td.summary__value(colspan="2"): span 250 MDL
+          tr
+            td.summary__label.total итого
+            td.summary__value.total(colspan="2"): span 4000 MDL
+      .shopping-cart__actions
+        .actions__left 
+          a(href="").btn назад в каталог
+          a(href="").btn.btn-red очистить корзину
+        .actions__right: a(href="").btn.lg.btn-primary оформить заказ

@@ -279,11 +279,12 @@
 }
 
 .navbar {
-  border-bottom: 1px solid rgba($dark, 0.1);
+  transition: none;
   &__wraper {
     background-color: rgba($white, 0.3);
     display: flex;
     align-items: stretch;
+    border-bottom: 1px solid rgba($dark, 0.1);
   }
   &__left {
     flex: 1;
@@ -681,6 +682,21 @@
       &__contacts {
         display: block;
       }
+    }
+  }
+
+  &.sticky {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    right: 0;
+    @include gradient(45deg, $teal 5%, $green 95%);
+    box-shadow: 0 0 5px rgba($dark, 0.25);
+    transition: 0.25s linear;
+
+    &.onscreen {
+      position: fixed;
+      top: 0;
     }
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>TRIVENT :: Сотрудничество</title>
+    <title>TRIVENT :: Корзина</title>
     <!-- FAVICON & THEME-->
     <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;display=swap&amp;subset=cyrillic"/>
     <link rel="stylesheet" href="css/styles.min.css"/>
   </head>
-  <body class="trv partners">
+  <body class="trv shopping-cart">
     <!-- Global HEADER-->
     <header class="trv-header">
       <div class="trv-header__wraper">
@@ -220,8 +220,8 @@
       </div>
       <div class="trv-header__title">
         <div class="container">
-          <h1>Сотрудничество</h1>
-          <p>Мы всегда готовы к сотрудничеству с широким кругом заказчиков.<br>Компания Trivent Com открыта для долгосрочного и взаимовыгодного сотрудничества.</p>
+          <h1>Корзина</h1>
+          <p>Вы можете отредактиравать товары добавленные в корзину.<br>Можно изменять колличество товара или удалить его из корзины.</p>
         </div>
       </div>
     </header>
@@ -235,123 +235,127 @@
                 <svg class="icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
                 </svg><span>Главная</span></a></li>
-            <li class="vmenu__item last"><span>Сотрудничество</span></li>
+            <li class="vmenu__item last"><span>Корзина</span></li>
           </ul>
         </div>
       </div>
       <!-- Base Content-->
-      <div class="section partners__info">
+      <div class="shopping-cart__items">
         <div class="container">
-          <h2>Кому будет интересна совместная работа с нами:</h2>
-          <ul>
-            <li>Торгующим климатическим оборудованием компаниям и отдельным предпринимателям мы предлагаем только сертифицированное высококачественное оборудование по самым выгодным ценам, с гарантией от производителя, с продуманной доставкой в любой регион Молдовы и налаженным сервисным обслуживанием. Наши консультанты оказывают поддержку в правильном подборе и расчете параметров оборудования.</li>
-            <li>Проектным организациям, архитектурным бюро и институтам предлагаем полную информацию и данные по техническим возможностям, преимуществам, монтажу и обслуживанию отдельных видов сертифицированного оборудования. Наши инженеры, используя программное обеспечение, предлагаемое ведущими производителями, оказывают помощь дизайнерам интерьеров и проектантам в подборе нужных по характеристикам моделей и подскажут самое оригинальное, экономически выгодное решение. </li>
-            <li>Строительным организациям и отдельным монтажным бригадам и теплотехническим компаниям предлагаем широчайший ассортимент энергоэффективного климатического оборудования по специальным ценам для внедрения в современных системах вентиляции, кондиционирования, отопления жилых зданий и объектов коммерческого, сельскохозяйственного или промышленного назначения. Наши проектанты помогут в решении оригинальных и инновационных проектов любой сложности.</li>
-            <li>Для инвесторов и девелоперов, занимающихся строительным бизнесом, мы предлагаем взаимовыгодные условия для долгосрочного  сотрудничества и поставки оборудования по специальным ценам от производителя под конкретные объекты. Сделайте ваши проекты на уровень выше.</li>
-          </ul>
-          <p><b>Trivent Com</b> – надежный партнер и ответственный поставщик передового климатического оборудования.<br>С нами выгодно сотрудничать и перспективно развивать бизнес.</p>
-        </div>
-      </div>
-      <div class="section partners__form">
-        <div class="container">
-          <h2 class="partners__form__header"><span>стать партнером</span></h2>
-          <div class="row">
-            <div class="col lg-10 olg-1">
-              <form class="form" action="">
-                <div class="row">
-                  <div class="col sm-5">
+          <table class="table table__cart">
+            <thead>
+              <tr>
+                <th colspan="2">Наименование</th>
+                <th>цена</th>
+                <th>колличество</th>
+                <th>сумма</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/></a></td>
+                <td><a class="item__title" href="">Решетки настенные однорядные</a><span class="item__meta"> <span class="item__id">Артикул: <strong>123456</strong></span><span class="item__category">Категория: <strong>Решетки и диффузоры<strong></span><span class="item__brand">Бренд: <strong>Название бренда<strong></span></span></td>
+                <td><span class="item__price">125 mdl</span></td>
+                <td><span class="form__quantity">
+                    <label class="form__quantity__minus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </label>
+                    <input type="number" name="quantity" value="3" min="1" max="10" step="1"/>
+                    <label class="form__quantity__plus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </label></span></td>
+                <td><span class="item__total">1250 mdl</span></td>
+                <td>
+                  <button class="delete">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-delete"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/></a></td>
+                <td><a class="item__title" href="">Решетки настенные однорядные</a><span class="item__meta"> <span class="item__id">Артикул: <strong>123456</strong></span><span class="item__category">Категория: <strong>Решетки и диффузоры<strong></span><span class="item__brand">Бренд: <strong>Название бренда<strong></span></span></td>
+                <td><span class="item__price">125 mdl</span></td>
+                <td><span class="form__quantity">
+                    <label class="form__quantity__minus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </label>
+                    <input type="number" name="quantity" value="3" min="1" max="10" step="1"/>
+                    <label class="form__quantity__plus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </label></span></td>
+                <td><span class="item__total">1250 mdl</span></td>
+                <td>
+                  <button class="delete">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-delete"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td><a class="item__image" href=""><img src="tmp/shop_item_thumb_1.png" alt=""/></a></td>
+                <td><a class="item__title" href="">Решетки настенные однорядные</a><span class="item__meta"> <span class="item__id">Артикул: <strong>123456</strong></span><span class="item__category">Категория: <strong>Решетки и диффузоры<strong></span><span class="item__brand">Бренд: <strong>Название бренда<strong></span></span></td>
+                <td><span class="item__price">125 mdl</span></td>
+                <td><span class="form__quantity">
+                    <label class="form__quantity__minus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-minus"></use>
+                      </svg>
+                    </label>
+                    <input type="number" name="quantity" value="3" min="1" max="10" step="1"/>
+                    <label class="form__quantity__plus">
+                      <svg class="icon">
+                        <use xlink:href="img/sprite.svg#icon-plus"></use>
+                      </svg>
+                    </label></span></td>
+                <td><span class="item__total">1250 mdl</span></td>
+                <td>
+                  <button class="delete">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-delete"></use>
+                    </svg>
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" rowspan="3">
+                  <div class="form cupon__form">
+                    <h4>Скидочный купон</h4>
                     <div class="form__input">
-                      <input type="text" placeholder="Ваша специализация" name="prt_spec"/>
+                      <input type="text" placeholder="Введите промокод *" required="required" name="cupon"/>
                     </div>
-                    <div class="form__checkbox">
-                      <input id="spec1" type="checkbox" name="prt_spec_def" value="1"/>
-                      <label for="spec1"><span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Строительная организация;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec2" type="checkbox" name="prt_spec_def" value="2"/>
-                      <label for="spec2"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Монтажная бригада;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec3" type="checkbox" name="prt_spec_def" value="3"/>
-                      <label for="spec3"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Проектная организация;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec4" type="checkbox" name="prt_spec_def" value="4"/>
-                      <label for="spec4"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Архитектурное бюро;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec5" type="checkbox" name="prt_spec_def" value="5"/>
-                      <label for="spec5"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Студия дизайна интерьеров;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec6" type="checkbox" name="prt_spec_def" value="6"/>
-                      <label for="spec6"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Торгующая организация;</span></label>
-                    </div>
-                    <div class="form__checkbox">
-                      <input id="spec7" type="checkbox" name="prt_spec_def" value="7"/>
-                      <label for="spec7"> <span class="input">
-                          <svg class="icon">
-                            <use xlink:href="img/sprite.svg#icon-check"></use>
-                          </svg></span><span class="text">Другое.</span></label>
-                    </div>
+                    <button class="btn" type="submit">применить</button>
                   </div>
-                  <div class="col sm-7">
-                    <div class="form__input">
-                      <input type="text" placeholder="Ваша компания *" required="required" name="prt_company"/>
-                    </div>
-                    <div class="row">
-                      <div class="col sm-6">
-                        <div class="form__input">
-                          <input type="text" placeholder="Имя *" required="required" name="prt_firstname"/>
-                        </div>
-                      </div>
-                      <div class="col sm-6">
-                        <div class="form__input">
-                          <input type="text" placeholder="Фамилия *" required="required" name="prt_lastname"/>
-                        </div>
-                      </div>
-                      <div class="col sm-6">
-                        <div class="form__input error">
-                          <input type="tel" placeholder="Телефон *" required="required" name="prt_tel"/>
-                        </div>
-                      </div>
-                      <div class="col sm-6">
-                        <div class="form__input success">
-                          <input type="email" placeholder="e-Mail *" required="required" name="prt_email" value="test@test.com"/>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form__input">
-                      <textarea cols="30" rows="10" placeholder="Комментарий" name="prt_message"></textarea>
-                    </div>
-                    <div class="form__footer">
-                      <div class="form__footer__left">Ваш электронный адрес не будет опубликован.<br>Обязательные поля помечены *</div>
-                      <div class="form__footer__right">
-                        <button class="btn" type="submit">отправить</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
+                </td>
+                <td class="summary__label">сумма заказа</td>
+                <td class="summary__value" colspan="2"><span>3750 MDL</span></td>
+              </tr>
+              <tr>
+                <td class="summary__label">сумма доставки</td>
+                <td class="summary__value" colspan="2"><span>250 MDL</span></td>
+              </tr>
+              <tr>
+                <td class="summary__label total">итого</td>
+                <td class="summary__value total" colspan="2"><span>4000 MDL</span></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="shopping-cart__actions">
+            <div class="actions__left"> <a class="btn" href="">назад в каталог</a><a class="btn btn-red" href="">очистить корзину</a></div>
+            <div class="actions__right"><a class="btn lg btn-primary" href="">оформить заказ</a></div>
           </div>
         </div>
       </div>

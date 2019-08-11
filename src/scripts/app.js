@@ -52,6 +52,16 @@ $('.form__quantity').each(function() {
     }
   });
 });
+// Show/Hide Delivery Address
+$('[name=checkout_delivery]').change(function() {
+  var that = $(this);
+  var $val = parseInt(that.val());
+  if (that.is(':checked') && $val === 1) {
+    $('fieldset.delivery__address').slideDown(300);
+  } else {
+    $('fieldset.delivery__address').slideUp(300);
+  }
+});
 
 // Show / Hide FILTERS
 $('[data-toggle=filters]').click(function() {
@@ -67,13 +77,30 @@ $('[data-toggle=filters]').click(function() {
   }
 });
 
+// Fix navbar on scroll
+function createSticky(sticky) {
+  if (typeof sticky !== 'undefined') {
+    var stickyBottom = sticky.offset().top + sticky.height();
+    var headerBottom = $('.trv-header').height();
+    $(document).on('scroll', function() {
+      $(document).scrollTop() >= stickyBottom ? sticky.addClass('sticky') : sticky.removeClass('sticky');
+      $(document).scrollTop() >= headerBottom ? sticky.addClass('onscreen') : sticky.removeClass('onscreen');
+    });
+    $(document).ready(function() {
+      $(document).scrollTop() >= stickyBottom ? sticky.addClass('sticky') : sticky.removeClass('sticky');
+      $(document).scrollTop() >= headerBottom ? sticky.addClass('onscreen') : sticky.removeClass('onscreen');
+    });
+  }
+}
+createSticky($('.navbar'));
+
 // SHOW / HIDE SEARCH FORM
 $('.navbar__search-toogle').on('click', function(e) {
   let $this = $(this);
 
   if ($this.hasClass('active')) {
     $this.removeClass('active');
-    $this.find('use').attr('xlink:href', '#icon-search');
+    $this.find('use').attr('xlink:href', 'img/sprite.svg#icon-search');
     $(document)
       .find('form.product__search')
       .removeClass('show');
@@ -82,7 +109,7 @@ $('.navbar__search-toogle').on('click', function(e) {
       .val('');
   } else {
     $this.addClass('active');
-    $this.find('use').attr('xlink:href', '#icon-cancel');
+    $this.find('use').attr('xlink:href', 'img/sprite.svg#icon-cancel');
     $(document)
       .find('form.product__search')
       .addClass('show');

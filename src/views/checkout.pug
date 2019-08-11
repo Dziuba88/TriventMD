@@ -1,0 +1,86 @@
+extends layouts/default
+block VARIABLES
+  - var title = 'Оформить заказ'
+  - var description = 'Введите личные данные и выберите тип оплаты и доставки.<br>Поля отмеченные * обязательны для заполнения.'
+  - var page = 'checkout'
+block CONTENT
+  // breadcrumbs
+  .breadcrumbs
+    .container
+      ul.vmenu
+        li.vmenu__item.first: a.vmenu__link(href="")
+          svg.icon: use(xlink:href="img/sprite.svg#icon-home")
+          span Главная
+        li.vmenu__item.last: span=title
+  // Base Content
+  form.checkout__form
+    .container
+      .row
+        .col.md-8.lg-9
+          fieldset
+            legend прерсональные данные
+            .row
+              .col.sm-6: .form__input: input(type="text", placeholder="Имя *", required, name="checkout_firstname")
+              .col.sm-6: .form__input: input(type="text", placeholder="Фамилия *", required, name="checkout_lastname")
+              .col.sm-6: .form__input: input(type="tel", placeholder="Телефон *", required, name="checkout_tel")
+              .col.sm-6: .form__input: input(type="email", placeholder="e-Mail *", required, name="checkout_email")
+          fieldset
+            legend тип доставки
+            .row
+              .col.sm-6: .form__checkbox
+                input#delivery1(type="radio", name="checkout_delivery", value="1", checked)
+                label(for="delivery1")
+                  span.input: svg.icon: use(xlink:href='img/sprite.svg#icon-check')
+                  span.text Доставка курьером
+                    small Доставка по указанному адресу
+              .col.sm-6: .form__checkbox
+                input#delivery2(type="radio", name="checkout_delivery", value="2")
+                label(for="delivery2") 
+                  span.input: svg.icon: use(xlink:href='img/sprite.svg#icon-check')
+                  span.text Самовывоз
+                    small мун. Кишинэу, бул. Алба Юлия 75N
+          fieldset.delivery__address
+            legend адрес доставки
+            .row
+              .col.sm-6: .form__input: input(type="text", value="Республика Молдова", disabled, name="checkout_country")
+              .col.sm-6: .form__input: input(type="text", placeholder="Город *", required, name="checkout_city")
+              .col.sm-12: .form__input: input(type="text", placeholder="Адрес доставки (Улица, дом, кв./оф.) *", required, name="checkout_address")
+          .form__input: textarea(cols="30", rows="10", placeholder="Комментарий к заказу", name="checkout_message")
+          fieldset
+            legend тип оплаты
+            .row
+              .col.sm-6: .form__checkbox
+                input#payment1(type="radio", name="checkout_payment", value="1", checked)
+                label(for="payment1")
+                  span.input: svg.icon: use(xlink:href='img/sprite.svg#icon-check')
+                  span.text Наличными
+                    small Наличными при получении заказа
+              .col.sm-6: .form__checkbox
+                input#payment2(type="radio", name="checkout_payment", value="2")
+                label(for="payment2") 
+                  span.input: svg.icon: use(xlink:href='img/sprite.svg#icon-check')
+                  span.text Банковская карта
+                    small Оплато картой VISA / MASTERCARD
+        .col.md-4.lg-3
+          .checkout__form__summary
+            h4 ваш заказ <span>#123456-123</span>
+            ul
+              li.total
+                span сумма заказа
+                strong.total 4000 MDL
+              li
+                span скидка
+                strong 200 MDL<small class="text__red">-5%</small>
+              li
+                span тип доставки
+                strong Курьером
+              li
+                span доставка
+                strong 250 MDL
+              li
+                span тип оплаты
+                strong Наличными
+            .checkout__summary
+              span к оплате
+              strong 4050 MDL
+            button(type="submit").btn.lg.block.btn-primary оформить заказ

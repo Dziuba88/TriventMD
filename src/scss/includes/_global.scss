@@ -1,3 +1,6 @@
+* {
+  outline: none !important;
+}
 html,
 body {
   box-sizing: border-box;
@@ -911,4 +914,21 @@ input[type='number']::-webkit-outer-spin-button {
 }
 .modal a {
   white-space: nowrap;
+}
+.page-404 {
+  text-align: center;
+  padding: 15px 0 48px;
+  border-bottom: 1px solid $light;
+
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 1;
+    margin: 0 0 30px;
+  }
 }
