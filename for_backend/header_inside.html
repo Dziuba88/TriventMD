@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>TRIVENT :: Вентиляция</title>
+    <!-- FAVICON & THEME-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png"/>
+    <link rel="manifest" href="favicons/site.webmanifest"/>
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#2b827e"/>
+    <link rel="shortcut icon" href="favicons/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+    <meta name="msapplication-TileImage" content="favicons/mstile-144x144.png"/>
+    <meta name="msapplication-config" content="favicons/browserconfig.xml"/>
+    <meta name="theme-color" content="#2b827e"/>
+    <!-- Project Styles-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&amp;display=swap&amp;subset=cyrillic"/>
+    <link rel="stylesheet" href="css/styles.min.css"/>
+  </head>
+  <body class="trv catalog">
+    <!-- Global HEADER-->
+    <header class="trv-header">
+      <div class="trv-header__wraper">
+        <div class="trv-header__top">
+          <div class="container">
+            <div class="trv-header__top__nav">
+              <ul class="vmenu">
+                <li class="vmenu__item"><a class="vmenu__link" href="#">О нас</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Наши объекты</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Сотрудничество</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Акции</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Услуги</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Вакансии</a></li>
+                <li class="vmenu__item"><a class="vmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="trv-header__separator"></div>
+            <div class="trv-header__top__lang">
+              <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                  <svg class="dropdown__caret">
+                    <use xlink:href="img/sprite.svg#caret"></use>
+                  </svg></span>
+                <div class="dropdown__menu">
+                  <ul class="hmenu">
+                    <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                    <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="trv-header__bottom">
+          <div class="container">
+            <div class="trv-header__bottom__wraper">
+              <div class="trv-header__brand"><a href="">
+                  <svg class="logo">
+                    <use xlink:href="img/sprite.svg#TriventLogoWhite"></use>
+                  </svg></a></div>
+              <div class="trv-header__separator"></div>
+              <div class="trv-header__contacts"><a class="big-phone" href="tel:+373 69 777 383">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg><span>+373 69 777 383</span></a><a href="mailto:info@trivent.md">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                  </svg><span>info@trivent.md</span></a></div>
+              <div class="trv-header__contacts"><a href="tel:+373 22 854 006">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-telephone"></use>
+                  </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-fax"></use>
+                  </svg><span>+373 22 854 925</span></a></div>
+              <div class="trv-header__action">
+                <button class="btn btn-accent" data-modal="#calc-form">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-calculator"></use>
+                  </svg><span>Расчет стоимости</span>
+                </button>
+              </div>
+              <div class="trv-header__cart"><a class="cart-button" href="">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg><span class="counter">25</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar">
+          <div class="container">
+            <div class="navbar__wraper">
+              <div class="navbar__left">
+                <button class="show__navbar">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-bars"></use>
+                  </svg>
+                </button>
+                <div class="navbar__nav">
+                  <ul class="vmenu">
+                    <li class="vmenu__item current"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="img/sprite.svg#icon-fan"></use>
+                        </svg><span>Вентиляция</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="img/sprite.svg#icon-cold"></use>
+                        </svg><span>Кондиционеры</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="img/sprite.svg#icon-warm"></use>
+                        </svg><span>Отопление</span></a></li>
+                    <li class="vmenu__item"><a class="vmenu__link" href="">
+                        <svg class="icon">
+                          <use xlink:href="img/sprite.svg#icon-sett"></use>
+                        </svg><span>Монтажные элементы</span></a></li>
+                  </ul>
+                </div>
+                <form class="product__search" method="get" action="">
+                  <label class="icon" for="header-search">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-search"></use>
+                    </svg>
+                  </label>
+                  <input id="header-search" autocomplete="off" type="search" name="query" placeholder="Поиск по каталогу"/>
+                  <button class="btn xs btn-teal" type="submit">Найти</button>
+                </form>
+              </div>
+              <div class="navbar__right">
+                <button class="navbar__search-toogle">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navbar__mobile">
+          <div class="container">
+            <div class="navbar__mobile__header">
+              <div class="header-left">
+                <div class="navbar__mobile__lang">
+                  <div class="dropdown"><span class="dropdown__toggle" data-toggle="dropdown"> <span>Ru</span>
+                      <svg class="dropdown__caret">
+                        <use xlink:href="img/sprite.svg#caret"></use>
+                      </svg></span>
+                    <div class="dropdown__menu">
+                      <ul class="hmenu">
+                        <li class="hmenu__item current"><a class="hmenu__link" href="#">Ru</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">Md</a></li>
+                        <li class="hmenu__item"><a class="hmenu__link" href="#">En</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-right">
+                <button class="close__navbar">
+                  <svg class="icon">
+                    <use xlink:href="img/sprite.svg#icon-cancel"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="navbar__mobile__nav">
+              <ul class="cat-nav">
+                <li class="cat-nav__item"><a class="cat-nav__link current" href="">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-fan"></use>
+                    </svg><span>Вентиляция</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-cold"></use>
+                    </svg><span>Кондиционеры</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-warm"></use>
+                    </svg><span>Отопление</span></a></li>
+                <li class="cat-nav__item"><a class="cat-nav__link" href="">
+                    <svg class="icon">
+                      <use xlink:href="img/sprite.svg#icon-sett"></use>
+                    </svg><span>Монтажные элементы</span></a></li>
+              </ul>
+              <ul class="hmenu">
+                <li class="hmenu__item"><a class="hmenu__link active" href="#">О нас</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Наши объекты</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Сотрудничество</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Акции</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Услуги</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Вакансии</a></li>
+                <li class="hmenu__item"><a class="hmenu__link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="navbar__mobile__action">
+              <button class="btn btn-accent lg" data-modal="#calc-form">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#icon-calculator"></use>
+                </svg><span>Расчет стоимости</span>
+              </button>
+            </div>
+            <div class="navbar__mobile__contacts"><a href="tel:+373 69 777 383">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#icon-phone"></use>
+                </svg><span>+373 69 777 383</span></a><a href="tel:+373 22 854 006">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#icon-telephone"></use>
+                </svg><span>+373 22 854 006</span></a><a href="tel:+373 22 854 925">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#icon-fax"></use>
+                </svg><span>+373 22 854 925</span></a><a href="mailto:info@trivent.md">
+                <svg class="icon">
+                  <use xlink:href="img/sprite.svg#icon-envelope"></use>
+                </svg><span>info@trivent.md</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="trv-header__title">
+        <div class="container">
+          <h1>Вентиляция</h1>
+          <p>Важность вентиляции для организма не требует доказательств.<br>Одним из элементов воздуха является кислород, который жизненно необходим нашему организму.</p>
+        </div>
+      </div>
+    </header>

@@ -127,7 +127,7 @@
     .logo {
       display: block;
       width: 230px;
-      height: 48px;
+      height: 50px;
     }
   }
 
@@ -257,9 +257,20 @@
   }
 
   @include smallScreenDown {
+    &__separator {
+      min-width: 0;
+    }
     &__brand .logo {
-      width: 180px;
-      height: 36px;
+      padding: 5px;
+      width: 200px;
+      height: 50px;
+    }
+
+    &__cart {
+      .cart-button {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
     }
     &__contacts {
       display: none;
@@ -439,7 +450,6 @@
     right: 0;
     bottom: 0;
     overflow-y: auto;
-    transition: 0.5s linear;
 
     .close__navbar {
       background-color: transparent;
@@ -638,6 +648,7 @@
       transform: scale(0);
       opacity: 0;
       visibility: hidden;
+      transition: 0.15s linear;
 
       &.show {
         transform: scale(1);
@@ -693,6 +704,13 @@
     @include gradient(45deg, $teal 5%, $green 95%);
     box-shadow: 0 0 5px rgba($dark, 0.25);
     transition: 0.25s linear;
+
+    .navbar__wraper {
+      background-color: rgba($white, 0);
+      border-bottom: 1px solid rgba($dark, 0);
+      border-right: 1px solid rgba($white, 0.2);
+      border-left: 1px solid rgba($white, 0.2);
+    }
 
     &.onscreen {
       position: fixed;
